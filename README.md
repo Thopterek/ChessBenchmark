@@ -68,6 +68,8 @@ They’d make the evaluation reproducible and fair:
 
 [GAIA:A BENCHMARK FOR GENERAL AI ASSISTANTS](https://scontent-fra3-1.xx.fbcdn.net/v/t39.2365-6/441903294_1131492964728662_1145973121044474930_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=u6APR2mGCx4Q7kNvwEN6Ejk&_nc_oc=AdnO1i9MjtrLh4j0pIsezialQS20U8JVn9hE4ZwpUUvIw-2-IzH95kbP5dXHY4gtHTw&_nc_zt=14&_nc_ht=scontent-fra3-1.xx&_nc_gid=qpD_NMiZu30NBzE2MUus2w&oh=00_AfbXQXFFQ_zdSLpcnXZ4aVewkE0koGRDUrX3z27iHe-YZA&oe=68C49D30)
 
+[ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
+
 ## LLM models with specification in the domain of law (EU, national regulations):
 
 [Aleph-Alpha/tfree-hat-pretrained-7b-base](https://huggingface.co/Aleph-Alpha/tfree-hat-pretrained-7b-base)
@@ -75,8 +77,6 @@ They’d make the evaluation reproducible and fair:
 [nlpaueb/legal-bert-base-uncased](https://huggingface.co/nlpaueb/legal-bert-base-uncased)
 
 [microsoft/Phi-4-reasoning](https://huggingface.co/microsoft/Phi-4-reasoning)
-
-[ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
 
 [lexlms/legal-roberta-large](https://huggingface.co/lexlms/legal-roberta-large)
 
