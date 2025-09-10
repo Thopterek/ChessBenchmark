@@ -97,3 +97,10 @@ Base idea relates to possible way of using the expert models as a benchmark for 
    * problems depending on the language in which the document/rules/state-of-game are presented
    * adaptation to the completly new system
    * problem with the importance of the temporary data
+
+## After the meeting:
+
+1. Clear intentions
+2. Building block of the research (going into the measurable data)
+3. Creating the visualizing of the data
+4. Taking the references
