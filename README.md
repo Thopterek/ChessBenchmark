@@ -76,6 +76,8 @@ They’d make the evaluation reproducible and fair:
 
 [microsoft/Phi-4-reasoning](https://huggingface.co/microsoft/Phi-4-reasoning)
 
+[ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
+
 [lexlms/legal-roberta-large](https://huggingface.co/lexlms/legal-roberta-large)
 
 and more general models available through [ollama](https://ollama.com/library)
