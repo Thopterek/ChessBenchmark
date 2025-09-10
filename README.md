@@ -78,6 +78,8 @@ They’d make the evaluation reproducible and fair:
 
 [Judge AI: Assessing Large Language Models in Judicial Decision- Judge AI: Assessing Large Language Models in Judicial Decision-Making](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=2714&context=law_and_economics)
 
+[Aligning Superhuman AI with Human Behavior: Chess as a Model System](https://www.cs.toronto.edu/~ashton/pubs/maia-kdd2020.pdf)
+
 ## LLM models with specification in the domain of law (EU, national regulations):
 
 [Aleph-Alpha/tfree-hat-pretrained-7b-base](https://huggingface.co/Aleph-Alpha/tfree-hat-pretrained-7b-base)
