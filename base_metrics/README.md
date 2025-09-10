@@ -37,14 +37,14 @@
 
 ## Solutions for Pitfalls of Existing Benchmarks
 
-Memorization over reasoning, the parrot problem:
+1. Memorization over reasoning, the parrot problem:
     - Forcing reasoning by creating prompt with *A Priori, Guidelines*: 3
     - Providing the base knowledge according to *A Priori, Guidelines*: 1 - 2
 
-Lack of a Ground Truth, open ended tasks:
+2. Lack of a Ground Truth, open ended tasks:
     - Using a clear grading system provided by expert models *A Priori, Guidelines*: 4
     - Allowing for variation that is not subjective *A Priori, Guidelines*: 5
 
-Disconnect from Real-World Task:
+3. Disconnect from Real-World Task:
     - Rule based evaluation metric for rule based domain *Realated Assumptions*: 6 - 10
     - Adaptation skills to the different law systems *Realated Assumptions*: 6 - 10
