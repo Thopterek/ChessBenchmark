@@ -13,5 +13,3 @@
 8.  Legal chess move is corresponding to a legally compliant action suggested by LLM
 9.  Halucinations and illegal moves are breaching the law which was presented to AI
 10. Rating of the move relates to ability for outputing optimal compliance strategy
-
-## Why the models are failing

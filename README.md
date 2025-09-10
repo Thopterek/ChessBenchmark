@@ -70,6 +70,14 @@ They’d make the evaluation reproducible and fair:
 
 [ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
 
+[A critical review of large language models: Sensitivity, bias, and the path toward specialized AI](https://direct.mit.edu/qss/article/5/3/736/120940/A-critical-review-of-large-language-models)
+
+[Measuring General Intelligence with Generated Games](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-60.pdf)
+
+[Maia-2: A Unified Model for Human-AI Alignment in Chess](https://www.cs.toronto.edu/~ashton/pubs/maia2-neurips2024.pdf)
+
+[Judge AI: Assessing Large Language Models in Judicial Decision- Judge AI: Assessing Large Language Models in Judicial Decision-Making](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=2714&context=law_and_economics)
+
 ## LLM models with specification in the domain of law (EU, national regulations):
 
 [Aleph-Alpha/tfree-hat-pretrained-7b-base](https://huggingface.co/Aleph-Alpha/tfree-hat-pretrained-7b-base)
