@@ -1,13 +1,17 @@
 import os
-import pandas
+import pandas as pd
 import torch
-from transformers import AutoTokenizer, AutoModel, pipeline
+import requests
+from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM, pipeline
 
 # Version using the tokens that were given to us
 AL_TOKEN = os.environ.get("ALEPH_TOKEN")
 
 # Play around using the hugging face models
 HF_TOKEN = os.environ.get("HF_TOKEN")
+
+# Using the Open Router for different models
+OP_TOKEN = os.environ.get("OP_TOKEN")
 
 # Legal-BERT embedding model tests
 tokenizer = AutoTokenizer.from_pretrained("nlpaueb/legal-bert-base-uncased")
@@ -46,5 +50,35 @@ def tokens_from_embedded(embeddings, text, tokenizer):
     print(f"Average vector: {avg_embedd[:10].tolist()}")
     return avg_embedd
 
+# Sonoma Sky Alpha 
+def call_sonoma(prompt_file: str):
+    prompt = """
+    What was the capital of Poland in year 900?
+    """
+    response = requests.post(
+        "https://openrouter.ai/api/v1/chat/completions",
+        headers={
+            "Authorization": f"Bearer {OP_TOKEN}",
+            "Content-Type": "application/json"
+        },
+        json={
+            "model": "openrouter/sonoma-sky-alpha",
+            "messages": [{
+                "role": "user",
+                "content": prompt
+            }],
+            "max_tokens": 50
+        }
+    )
+    if response.status_code == 200:
+        result = response.json()
+        print("Response:", result['choices'][0]['message']['content'])
+    else:
+        print("Error:", response.text)
+    return
+
 if __name__ == "__main__":
-    result = lb_embedding("prompt_00.txt") 
+    embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt") 
+    embedd_fide_rules = lb_embedding("./prompts/prompt_01.txt")
+    print("Going for chat models")
+    call_sonoma("This is a string for testing")
