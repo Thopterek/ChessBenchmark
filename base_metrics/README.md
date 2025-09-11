@@ -48,3 +48,14 @@
 3. Disconnect from Real-World Task:
     - Rule based evaluation metric for rule based domain *Realated Assumptions*: 6 - 10
     - Adaptation skills to the different law systems *Realated Assumptions*: 6 - 10
+
+## Questions on possible improvement
+
+1. Control Group:
+    - is it suitable for our research to create one
+    - if so should it be human based or LLM based
+
+2. Checking the Vector of Hallucination
+    - what are the properties of the hallucination to recognize it
+    - if we know the vecors of the correct answer (Biggest Grade)
+    - compare how close the hallucination answer was to correct vectors
