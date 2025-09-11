@@ -13,6 +13,8 @@ HF_TOKEN = os.environ.get("HF_TOKEN")
 # Using the Open Router for different models
 OP_TOKEN = os.environ.get("OP_TOKEN")
 
+# 
+
 # Legal-BERT embedding model tests
 tokenizer = AutoTokenizer.from_pretrained("nlpaueb/legal-bert-base-uncased")
 model = AutoModel.from_pretrained("nlpaueb/legal-bert-base-uncased")
@@ -50,11 +52,20 @@ def tokens_from_embedded(embeddings, text, tokenizer):
     print(f"Average vector: {avg_embedd[:10].tolist()}")
     return avg_embedd
 
-# Sonoma Sky Alpha 
-def call_sonoma(prompt_file: str):
-    prompt = """
-    What was the capital of Poland in year 900?
-    """
+# Generic Function to call the model 
+def call_model(system_prompt: str, model_name: str, quest: str):
+    try:
+        with open(system_prompt, 'r', encoding='utf-8') as file:
+            sys_prompt = file.read().strip()
+    except FileNotFoundError:
+        print("File not found")
+        return
+    try:
+        with open(quest, 'r', encoding='utf-8') as file:
+            quest_prompt = file.read().strip()
+    except FileNotFoundError:
+        print("File not found")
+        return
     response = requests.post(
         "https://openrouter.ai/api/v1/chat/completions",
         headers={
@@ -62,10 +73,14 @@ def call_sonoma(prompt_file: str):
             "Content-Type": "application/json"
         },
         json={
-            "model": "openrouter/sonoma-sky-alpha",
+            "model": model_name,
             "messages": [{
+                "role": "system",
+                "content": sys_prompt
+            },
+            {
                 "role": "user",
-                "content": prompt
+                "content": quest_prompt
             }],
             "max_tokens": 50
         }
@@ -77,8 +92,20 @@ def call_sonoma(prompt_file: str):
         print("Error:", response.text)
     return
 
+# debug colors
+class Color:
+    GREEN = '\033[92m'
+    END = '\033[0m'
+
 if __name__ == "__main__":
     embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt") 
     embedd_fide_rules = lb_embedding("./prompts/prompt_01.txt")
-    print("Going for chat models")
-    call_sonoma("This is a string for testing")
+    print("\n------------------------")
+    print("Going to test the models")
+    print("------------------------")
+    models = ["google/gemini-2.5-flash-lite", "openai/gpt-4.1-mini", 
+              "thedrummer/anubis-70b-v1.1", "anthropic/claude-sonnet-4", "openai/gpt-3.5-turbo-instruct"]
+    for model in models:
+        print(f"Calling model {model}")
+        call_model("./prompts/prompt_01.txt", model, "./prompts/01quest.txt")
+        print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}") 
