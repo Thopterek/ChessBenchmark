@@ -109,8 +109,8 @@ if __name__ == "__main__":
               "anthropic/claude-sonnet-4", "openai/gpt-3.5-turbo-instruct",
               "nvidia/nemotron-nano-9b-v2:free", "deepseek/deepseek-chat-v3.1:free",
               "meta-llama/llama-3.3-8b-instruct:free"] 
-    for num in range(0, 10, +1):
-        for model in models:
-            print(f"Calling model {Color.RED}{model}{Color.END}")
-            call_model("./prompts/prompt_02_enforce.txt", model, "./prompts/01quest.txt")
-            print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")
+    #for num in range(0, 10, +1):
+    for model in models:
+        print(f"Calling model {Color.RED}{model}{Color.END}")
+        call_model("./prompts/prompt_02_enforce.txt", model, "./prompts/01quest.txt")
+        print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")

@@ -718,6 +718,8 @@ Response: Qf3
 
 ## ONE TIME TEST Adding the: enforce chess rules to the prompt **prompt_02_enforce.txt**
 
+**Round 1**
+
 Calling model google/gemini-2.5-flash-lite
 Response: Qh5
 
@@ -743,3 +745,28 @@ Response: <answer>Qd8</answer>
 
 Calling model meta-llama/llama-3.3-8b-instruct:free
 Response: Qd3
+
+**Round 2**
+
+Calling model google/gemini-2.5-flash-lite                                       Response: Rxf6
+
+Calling model openai/gpt-4.1-mini
+Response: <answer>Qxf7#</answer>                                                 
+
+Calling model anthropic/claude-sonnet-4
+Response: <answer>
+Qg8+                                                                             
+</answer>
+
+Calling model openai/gpt-3.5-turbo-instruct
+Response: Based on the given board and FEN string, the best possible move for the white player is:
+Queen Moves to G3
+
+Calling model nvidia/nemotron-nano-9b-v2:free
+Response: <answer>Rook Moves to H8
+
+Calling model deepseek/deepseek-chat-v3.1:free
+Response: <answer>Qd5xf7</answer>
+
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf3
