@@ -94,18 +94,23 @@ def call_model(system_prompt: str, model_name: str, quest: str):
 
 # debug colors
 class Color:
+    RED = '\033[91m'
     GREEN = '\033[92m'
     END = '\033[0m'
 
 if __name__ == "__main__":
-    embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt") 
-    embedd_fide_rules = lb_embedding("./prompts/prompt_01.txt")
+    #embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt") 
+    #embedd_fide_rules = lb_embedding("./prompts/prompt_01.txt")
     print("\n------------------------")
     print("Going to test the models")
     print("------------------------")
-    models = ["google/gemini-2.5-flash-lite", "openai/gpt-4.1-mini", 
-              "thedrummer/anubis-70b-v1.1", "anthropic/claude-sonnet-4", "openai/gpt-3.5-turbo-instruct"]
-    for model in models:
-        print(f"Calling model {model}")
-        call_model("./prompts/prompt_01.txt", model, "./prompts/01quest.txt")
-        print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}") 
+    # two models that as for now have a chance to at least get the answer
+    models = ["google/gemini-2.5-flash-lite", "openai/gpt-4.1-mini",
+              "anthropic/claude-sonnet-4", "openai/gpt-3.5-turbo-instruct",
+              "nvidia/nemotron-nano-9b-v2:free", "deepseek/deepseek-chat-v3.1:free",
+              "meta-llama/llama-3.3-8b-instruct:free"] 
+    for num in range(0, 10, +1):
+        for model in models:
+            print(f"Calling model {Color.RED}{model}{Color.END}")
+            call_model("./prompts/prompt_02_enforce.txt", model, "./prompts/01quest.txt")
+            print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")
