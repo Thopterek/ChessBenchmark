@@ -108,11 +108,11 @@ C. Base, accuracy of the taken move given all the informations from the **A prio
 | Nhf7+ | $${\color{orange}Qxd8}$$ | Qf7+ | $${\color{orange}Qe7}$$ | $${\color{orange}rook-moves-to-a8}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
 | Nf7 | Qf7# | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qa3}$$
 | Nhf7 | $${\color{orange}Qxd8}$$ | Qg8+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-D5}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
-| Nhf7 | Qg8# | Qd8+ | $${\color{red}SE}$$ | Queen Moves to H5 | Qd8 | Qd3
-| Ng8 | Qxd8 | Qf7+ | $${\color{red}SE}$$ | Queen Moves to H6 | Qd8 | Nf3
-| Qh5# | Qg8# | Qg8+ | $${\color{red}SE}$$ | Queen Moves to H1 | Qd8 | Nh2
-| Nf7 | Qxf7# | Qf7+ | $${\color{red}SE}$$ | Queen Moves to H4 | Qd8 | Queen moves to E3
-| Qh5 | Qg8# | Qxf7+ | Bc4 | Queen Moves to E3 | Qd8 | Qf3
+| Nhf7 | Qg8# | $${\color{orange}Qd8+}$$ | $${\color{red}SE}$$ | Queen Moves to H5 | $${\color{orange}Qd8}$$ | Qd3
+| Ng8 | $${\color{orange}Qxd8}$$ | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H6}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
+| Qh5# | Qg8# | Qg8+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H1}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nh2}$$
+| Nf7 | Qxf7# | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H4}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Queen-moves-to-E3}$$
+| Qh5 | Qg8# | Qxf7+ | $${\color{orange}Bc4}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qf3}$$
 
 ---
 ONE TIME TEST Adding the: enforce chess rules to the prompt **prompt_02_enforce.txt**
