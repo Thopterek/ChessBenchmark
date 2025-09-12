@@ -71,7 +71,7 @@ Fourth System Prompt, Making the LLMs GODS of Chess **god_prompt.txt**
 ---
 Testing more models to find a pattern using the *prompt_02.txt* Chess Grandmaster
 ---
-Models:
+A. Models:
 1. google/gemini-2.5-flash-lite
 2. openai/gpt-4.1-mini
 3. anthropic/claude-sonnet-4
@@ -80,24 +80,38 @@ Models:
 6. deepseek/deepseek-chat-v3.1:free
 7. meta-llama/llama-3.3-8b-instruct:free
 
-Syntax errors (called SE in table), example:
+B. Syntax errors (called SE in table), example:
 
 - The best possible move for the white player in this position is to move the queen to e8. 
 - This will put black in check and set up a mate in two if black moves their king to f7.
 - Hello, I am the chess grandmaster assistant. 
 - Based on the board and context provided, the best possible move for the white player is
 
+C. Base, accuracy of the taken move given all the informations from the **A priori, guidelines**
+  * Level A: Response validity through syntax evaluation $${\color{red}Red}$$:
+    - is it a chess move that can be parsed 
+    - if so does it have a proper format
+  * Level B: Legal move compliance $${\color{orange}Orange}$$:
+    - presented move is a rule based one
+    - are there any hallucinations
+  * Level C: Strategic quality, assigning the grade based on the expert model:
+    - Blunder $${\color{yellow}Yellow}$$
+    - Mistake $${\color{lightblue}Light \space Blue}$$
+    - Inaccuracy $${\color{blue}Blue}$$
+    - Good Move $${\color{lightgreen}Light \space Green}$$
+    - Best possible / Brilliant move $${\color{green}Green}$$
+
 | gemini-2.5-flash-lite | gpt-4.1-mini | claude-sonnet-4 | gpt-3.5-turbo-instruct | nemotron-nano-9b-v2 | deepseek-chat-v3.1 | llama-3.3-8b-instruct |
 |---|---|---|---|---|---|---|
-| Nhf7# | Qg8# | Qf7+ | SE | Queen Moves to G5 | Qd5xf7 | Qd2
-| Nf7+ | Qg8# | Qg8+ | SE | Re8 | Qd8 | Qf3
+| Nhf7# | Qg8# | Qf7+ | $${\color{red}SE}$$ | Queen Moves to G5 | Qd5xf7 | Qd2
+| Nf7+ | Qg8# | Qg8+ | $${\color{red}SE}$$ | $${\color{orange}Re8}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qf3}$$
 | Nhf7+ | Qxd8 | Qf7+ | Qe7 | rook moves to a8 | Qd8 | Nf3
-| Nf7 | Qf7# | Qf7+ | SE | Queen Moves to E3 | Qd8 | Qa3
-| Nhf7 | Qxd8 | Qg8+ | SE | Queen Moves to D5 | Qd8 | Nf3
-| Nhf7 | Qg8# | Qd8+ | SE | Queen Moves to H5 | Qd8 | Qd3
-| Ng8 | Qxd8 | Qf7+ | SE | Queen Moves to H6 | Qd8 | Nf3
-| Qh5# | Qg8# | Qg8+ | SE | Queen Moves to H1 | Qd8 | Nh2
-| Nf7 | Qxf7# | Qf7+ | SE | Queen Moves to H4 | Qd8 | Queen moves to E3
+| Nf7 | Qf7# | Qf7+ | $${\color{red}SE}$$ | Queen Moves to E3 | Qd8 | Qa3
+| Nhf7 | Qxd8 | Qg8+ | $${\color{red}SE}$$ | Queen Moves to D5 | Qd8 | Nf3
+| Nhf7 | Qg8# | Qd8+ | $${\color{red}SE}$$ | Queen Moves to H5 | Qd8 | Qd3
+| Ng8 | Qxd8 | Qf7+ | $${\color{red}SE}$$ | Queen Moves to H6 | Qd8 | Nf3
+| Qh5# | Qg8# | Qg8+ | $${\color{red}SE}$$ | Queen Moves to H1 | Qd8 | Nh2
+| Nf7 | Qxf7# | Qf7+ | $${\color{red}SE}$$ | Queen Moves to H4 | Qd8 | Queen moves to E3
 | Qh5 | Qg8# | Qxf7+ | Bc4 | Queen Moves to E3 | Qd8 | Qf3
 
 ---
