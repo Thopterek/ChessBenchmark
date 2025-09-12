@@ -103,16 +103,16 @@ C. Base, accuracy of the taken move given all the informations from the **A prio
 
 | gemini-2.5-flash-lite | gpt-4.1-mini | claude-sonnet-4 | gpt-3.5-turbo-instruct | nemotron-nano-9b-v2 | deepseek-chat-v3.1 | llama-3.3-8b-instruct |
 |---|---|---|---|---|---|---|
-| $${\color{lightgreen}Nhf7}$$ | $${\color{green}Qg8}$$ | Qf7+ | $${\color{red}SE}$$ | Queen Moves to G5 | Qd5xf7 | Qd2
+| $${\color{lightgreen}Nhf7}$$ | $${\color{green}Qg8}$$ | $${\color{lightblue}Qf7}$$ | $${\color{red}SE}$$ | Queen Moves to G5 | $${\color{lightblue}Qf7}$$ | $${\color{blue}Qd2}$$
 | $${\color{lightgreen}Nf7}$$ | $${\color{green}Qg8}$$ | $${\color{green}Qg8+}$$ | $${\color{red}SE}$$ | $${\color{orange}Re8}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qf3}$$
-| $${\color{lightgreen}Nhf7}$$ | $${\color{orange}Qxd8}$$ | Qf7+ | $${\color{orange}Qe7}$$ | $${\color{orange}rook-moves-to-a8}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
-| $${\color{lightgreen}Nhf7}$$ | Qf7# | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qa3}$$
+| $${\color{lightgreen}Nhf7}$$ | $${\color{orange}Qxd8}$$ | $${\color{lightblue}Qf7}$$ | $${\color{orange}Qe7}$$ | $${\color{orange}rook-moves-to-a8}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
+| $${\color{lightgreen}Nhf7}$$ | $${\color{lightblue}Qf7}$$ | $${\color{lightblue}Qf7}$$ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qa3}$$
 | $${\color{lightgreen}Nhf7}$$ | $${\color{orange}Qxd8}$$ | $${\color{green}Qg8+}$$ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-D5}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
-| $${\color{lightgreen}Nhf7}$$ | $${\color{green}Qg8}$$ | $${\color{orange}Qd8+}$$ | $${\color{red}SE}$$ | Queen Moves to H5 | $${\color{orange}Qd8}$$ | Qd3
-| Ng8 | $${\color{orange}Qxd8}$$ | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H6}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
+| $${\color{lightgreen}Nhf7}$$ | $${\color{green}Qg8}$$ | $${\color{orange}Qd8+}$$ | $${\color{red}SE}$$ | Queen Moves to H5 | $${\color{orange}Qd8}$$ | $${\color{lightblue}Qd3}$$
+| Ng8 | $${\color{orange}Qxd8}$$ | $${\color{lightblue}Qf7}$$ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H6}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nf3}$$
 | Qh5# | $${\color{green}Qg8}$$ | $${\color{green}Qg8+}$$ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H1}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Nh2}$$
-| $${\color{lightgreen}Nhf7}$$ | Qxf7# | Qf7+ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H4}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Queen-moves-to-E3}$$
-| Qh5 | $${\color{green}Qg8}$$ | Qxf7+ | $${\color{orange}Bc4}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qf3}$$
+| $${\color{lightgreen}Nhf7}$$ | $${\color{lightblue}Qf7}$$ | $${\color{lightblue}Qf7}$$ | $${\color{red}SE}$$ | $${\color{orange}Queen-Moves-to-H4}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Queen-moves-to-E3}$$
+| Qh5 | $${\color{green}Qg8}$$ | $${\color{lightblue}Qf7}$$ | $${\color{orange}Bc4}$$ | $${\color{orange}Queen-Moves-to-E3}$$ | $${\color{orange}Qd8}$$ | $${\color{orange}Qf3}$$
 
 ---
 ONE TIME TEST Adding the: enforce chess rules to the prompt **prompt_02_enforce.txt**
