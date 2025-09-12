@@ -1,215 +1,40 @@
-First System Prompt *prompt_02.txt* Chess Grand Master
+#First System Prompt *prompt_02.txt* Chess Grand Master
 
+
+
+|google/gemini-2.5-flash-lite|openai/gpt-4.1-mini|
 |------------------------------|------------------------------|
-|-google/gemini-2.5-flash-lite-|
-Response: <answer>Qg5#</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qg8#</answer>
-NEXT MODEL GOING TO THE PIPE
+|            Qg5#              |           Qg8                |
+|            Ngf6+             |           Qg8                |
+| Ig6 |  Qxf7 |
+| Nf7 | Qxf7 |
+| Nf7+ | Qxd8 |
+| Nxe7 | Qxf7 |
+| Ngf5 | Qh5 |
+| Nhf7  | Qd8+ |
+| Ng8-f7 | Qg8# |
+| Nf7+ | Qxd8 |
 
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Ngf6+</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qg8#</answer>
-NEXT MODEL GOING TO THE PIPE
 
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Ig6</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qxf7#</answer>
-NEXT MODEL GOING TO THE PIPE
 
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Nf7+</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qxf7#</answer>
-NEXT MODEL GOING TO THE PIPE
+#Second System Prompt *prompt_01.txt* FIDA Rules of Chess
 
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Nf7+</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qxd8</answer>
-NEXT MODEL GOING TO THE PIPE
 
-Response: <answer>Nxe7+</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qxf7#</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:37:52.114000 69961 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+|google/gemini-2.5-flash-lite|openai/gpt-4.1-mini|
+|------------------------------|------------------------------|
+| Queen to H5 | Queen Moves to d8 |
+| Rook Moves to E1 | Queen Moves to D8 |
+|  Knight Moves to F7 | Queen moves to d8 |
+| Queen to h5 | Queen Moves to D8 |
+|  Rook Moves to E1 | Queen Moves to D8 |
+| Knight Moves to F7 | Queen Moves to D8 |
+| Bishop takes Knight | Queen moves to g8 |
+| Knight to F7 | Queen Moves to D8 |
+| Rook to E1 | Queen Moves to D8 | 
+| Rook Moves to E1 | Queen Moves to D8 |
 
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Ngf5</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qh5#</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:37:58.207000 69978 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
 
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>[Nhf7]</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qd8+</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:38:05.060000 69995 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Ng8-f7</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qg8#</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:38:12.088000 70012 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: <answer>Nf7+</answer>
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Qxd8</answer>
-NEXT MODEL GOING TO THE PIPE
-
-Second System Prompt *prompt_01.txt* FIDA Rules of Chess 
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Queen to H5
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to d8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:40:04.398000 70158 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Rook Moves to E1
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:40:14.353000 70175 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Knight Moves to F7
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen moves to d8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:40:23.174000 70192 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Queen to h5
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics)
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Rook Moves to E1
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:41:02.536000 70278 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Knight Moves to F7
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:41:11.218000 70295 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Bishop takes Knight
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen moves to g8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:41:32.485000 70312 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Knight to F7
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Rook to E1
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗ python models_setup.py
-W0911 19:41:56.689000 70380 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
-
-------------------------
-Going to test the models
-------------------------
-Calling model google/gemini-2.5-flash-lite
-Response: Rook Moves to E1
-NEXT MODEL GOING TO THE PIPE
-Calling model openai/gpt-4.1-mini
-Response: <answer>Queen Moves to D8</answer>
-NEXT MODEL GOING TO THE PIPE
-(base_metrics) ➜  base_metrics git:(00_metrics) ✗
-
-Third System Prompt *01questtxt* Giving the prompt as System And User prompt 
+#Third System Prompt *01questtxt* Giving the prompt as System And User prompt 
 
 Calling model google/gemini-2.5-flash-lite
 Response: <answer>Knight to F7</answer>
