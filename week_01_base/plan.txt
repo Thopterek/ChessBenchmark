@@ -1,0 +1,90 @@
+1. System Prompt: the most full possible recollection of content in prompt:
+    - Clear rule set of the promp with fully build scale (like the ones leaked)
+    - Different way to format the rules and the board state, so its Human understandble (or LLM made for LLM)
+    - Giving the explanation of the FEN of the notation to every prompt
+    - **Finding out how to check for the small changes**
+    - Clear label for each of them
+
+2. Optimal setting for each model:
+    - setting up the temperature
+    - max tokens
+    - time to iterate
+
+3. Read about long context argument
+    - giving him the moves that were prior to the board state that it is now
+    - read about the long context argument benchmarks
+
+4. Bias
+    - diff languages
+    - diff document formats
+    - gender of the player (female / male / non binary grandmaster)
+    - age differences (I am 13 year old, I am 60 year old)
+    - threating the model to give better results
+
+Life saver:
+    - Finding out how much they know FEN
+    - Figuring out how much they know Chess
+
+Side quest: Compare the tests when we give the possible answer
+    - make one of the moves A B C D
+    - does it use his assumptions or our given context
+    - Pipe the output into stockfish if thats possible
+    - Does the vectorization and labeling help
+
+### NOTE, ONLY 3.5 CARED ABOUT SYSTEM PROMPT
+prompt_02.txt and howgood.txt
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: 10
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: I am a chess grandmaster, so I would rate myself as a 10.
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: 8
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: I am sorry, but I am not able to grade myself in chess. I am only programmed to suggest the next move based on the given legal moves and current game state.
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/nemotron-nano-9b-v2:free
+Response: 8
+
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1:free
+Response: 10
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: I would grade myself as a 9 out of 10.
+NEXT MODEL GOING TO THE PIPE
+(base_metrics) ➜  base_metrics git:(00_metrics) ✗
+
+
+### NOTE 02 THEIR OWN RATING objective.txt and howgood.txt
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: OB answer: 1
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: 4
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: 6
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: I would say that my chess skills are a solid 8. I have a deep knowledge of chess strategies and can quickly adapt to different positions on the board.
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/nemotron-nano-9b-v2:free
+Response: [7]
+
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1:free
+Response: 7
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: 5
+NEXT MODEL GOING TO THE PIPE

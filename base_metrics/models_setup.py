@@ -112,5 +112,5 @@ if __name__ == "__main__":
     #for num in range(0, 10, +1):
     for model in models:
         print(f"Calling model {Color.RED}{model}{Color.END}")
-        call_model("./prompts/prompt_02_enforce.txt", model, "./prompts/01quest.txt")
+        call_model("./prompts/objective.txt", model, "./prompts/howgood.txt")
         print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")
