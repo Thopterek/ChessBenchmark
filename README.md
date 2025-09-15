@@ -70,6 +70,8 @@ They’d make the evaluation reproducible and fair:
 
 [OK, I can partly explain the LLM chess weirdness now](https://dynomight.net/more-chess/)
 
+[ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
+
 ## LLM models with specification in the domain of law (EU, national regulations):
 
 [Aleph-Alpha/tfree-hat-pretrained-7b-base](https://huggingface.co/Aleph-Alpha/tfree-hat-pretrained-7b-base)
@@ -77,8 +79,6 @@ They’d make the evaluation reproducible and fair:
 [nlpaueb/legal-bert-base-uncased](https://huggingface.co/nlpaueb/legal-bert-base-uncased)
 
 [microsoft/Phi-4-reasoning](https://huggingface.co/microsoft/Phi-4-reasoning)
-
-[ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
 
 [lexlms/legal-roberta-large](https://huggingface.co/lexlms/legal-roberta-large)
 
