@@ -68,6 +68,16 @@ They’d make the evaluation reproducible and fair:
 
 [GAIA:A BENCHMARK FOR GENERAL AI ASSISTANTS](https://scontent-fra3-1.xx.fbcdn.net/v/t39.2365-6/441903294_1131492964728662_1145973121044474930_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=u6APR2mGCx4Q7kNvwEN6Ejk&_nc_oc=AdnO1i9MjtrLh4j0pIsezialQS20U8JVn9hE4ZwpUUvIw-2-IzH95kbP5dXHY4gtHTw&_nc_zt=14&_nc_ht=scontent-fra3-1.xx&_nc_gid=qpD_NMiZu30NBzE2MUus2w&oh=00_AfbXQXFFQ_zdSLpcnXZ4aVewkE0koGRDUrX3z27iHe-YZA&oe=68C49D30)
 
+[A critical review of large language models: Sensitivity, bias, and the path toward specialized AI](https://direct.mit.edu/qss/article/5/3/736/120940/A-critical-review-of-large-language-models)
+
+[Measuring General Intelligence with Generated Games](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-60.pdf)
+
+[Maia-2: A Unified Model for Human-AI Alignment in Chess](https://www.cs.toronto.edu/~ashton/pubs/maia2-neurips2024.pdf)
+
+[Judge AI: Assessing Large Language Models in Judicial Decision- Judge AI: Assessing Large Language Models in Judicial Decision-Making](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=2714&context=law_and_economics)
+
+[Aligning Superhuman AI with Human Behavior: Chess as a Model System](https://www.cs.toronto.edu/~ashton/pubs/maia-kdd2020.pdf)
+
 [OK, I can partly explain the LLM chess weirdness now](https://dynomight.net/more-chess/)
 
 [ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/pdf/2306.09200)
