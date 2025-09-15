@@ -30,6 +30,7 @@ Side quest: Compare the tests when we give the possible answer
     - does it use his assumptions or our given context
     - Pipe the output into stockfish if thats possible
     - Does the vectorization and labeling help
+    - Money cost and other flexing points
 
 ### NOTE, ONLY 3.5 CARED ABOUT SYSTEM PROMPT
 prompt_02.txt and howgood.txt
