@@ -1,0 +1,173 @@
+## The simplest possible prompt and system simple_fast and simple.txt
+
+## 100 tokens
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Qxh7#
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qxd8
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qxd7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: Based on this board state, the best move would be Qf6.
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/llama-3.1-nemotron-ultra-253b-v1
+Response: <think>
+Okay, let's see. I need to find the best move for White in this position. The FEN is 3qr2k/pbpp2pp/1p5N/3Q4/2P1P1b1/P7/1PP2PPP/R3RK2 w - - 0 1. So, White to move. Let me visualize the board.
+
+Starting with the kings: Black's king is on h8, and White's is
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qd8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf6
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-next-80b-a3b-thinking
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-code-fast-1
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qe5
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qd4
+NEXT MODEL GOING TO THE PIPE
+
+change with models
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Qh5
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qxd8
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: The best move is Qd6.
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qh5
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Qd3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qxg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qxd7+
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-4
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qd6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+
+## LESS TOKENS (10) AND TEMPERATURE (0)
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Qh5
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qxd8
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: The best move is Qd5.
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qd5e6
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Qd3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Error: {"error":{"message":"Provider returned error","code":400,"metadata":{"raw":"{\n  \"error\": {\n    \"message\": \"Invalid 'max_output_tokens': integer below minimum value. Expected a value >= 16, but got 10 instead.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"max_output_tokens\",\n    \"code\": \"integer_below_min_value\"\n  }\n}","provider_name":"OpenAI"}},"user_id":"org_2yGThJmCFb99t9fdaC6z3yc33v0"}
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qxg4
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-4
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qd6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: <unk><unk><unk><unk><unk><unk><unk><unk><unk>
+NEXT MODEL GOING TO THE PIPE
+
+
+## NOW JUST CHANGING THE TOKENS TO 16
+
+Calling model google/gemini-2.5-flash-lite
+Response: Qh5
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: The best move is Qd5.
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qd8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Error: {"error":{"message":"Provider returned error","code":502,"metadata":{"raw":"{\"title\":\"Internal server error\",\"detail\":\"Unable to process request\",\"status\":500}","provider_name":"Meta"}},"user_id":"org_2yGThJmCFb99t9fdaC6z3yc33v0"}
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qxg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-4
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qd6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: <unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk>
+NEXT MODEL GOING TO THE PIPE

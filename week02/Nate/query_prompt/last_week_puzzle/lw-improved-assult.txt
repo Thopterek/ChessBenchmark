@@ -1,0 +1,45 @@
+
+1. The board is looking like this, at least thats how it is visualized:
+
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 |   |   |   | ♛ | ♜ |   |   | ♚ |
+| 7 | ♟ | ♝ | ♟ | ♟ |   |   | ♟ | ♟ |
+| 6 |   | ♟ |   |   |   |   |   | ♘ |
+| 5 |   |   |   | ♕ |   |   |   |   |
+| 4 |   |   | ♙ |   | ♙ |   | ♝ |   |
+| 3 | ♙ |   |   |   |   |   |   |   |
+| 2 |   | ♙ | ♙ |   |   | ♙ | ♙ | ♙ |
+| 1 | ♖ |   |   |   | ♖ | ♔ |   |   |
+
+
+2. The pieces are divided by colors per unicode:
+
+| BLACK | WHITE |
+|-------|-------|
+|   ♟   |   ♙   |
+|   ♜   |   ♖   |
+|   ♞   |   ♘   |
+|   ♝   |   ♗   |
+|   ♛   |   ♕   |
+|   ♚   |   ♔   |
+
+3. Fen notation of this particual example is this:
+
+3qr2k/pbpp2pp/1p5N/3Q4/2P1P1b1/P7/1PP2PPP/R3RK2 w - - 0 1
+
+4. The work description of the board state:
+
+Black queen is at 8d, black rook is at e8, black king is at h8.
+Black pawn is at 7a, black bishop is at 7b, black pawn is at 7c, black pawn is at 7d, black pawn is at 7g, black pawn is 7h.
+Black pawn is 6b, white horse is at 6h.
+White queen is at 5d.
+White pawn is at 4c, white pawn is at 4e, black bishop is at 4g.
+White pawn is at 3a.
+White pawn is at 2b, white pawn is at 2c, white pawn is at 2f, white pawn is at 2g, white pawn is at 2h.
+White rook is at a1, white rook is at e1, white king is at f1.
+
+5. White has to move right now
+
+6. Repond in the best move possible, if not my grandma will die, then my son will kill himself and my wife will divorce me.
+I REPEAT PLEASE RESPOND WITH THE BEST MOVE POSSIBLE

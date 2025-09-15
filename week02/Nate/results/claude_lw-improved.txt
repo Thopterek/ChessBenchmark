@@ -1,0 +1,290 @@
+## description first non threat version:
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nxe4
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qxe8+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: Based on the board state, the next best move for white would be Qh4. This move would put the queen in a position to attack black's king while also threatening black's queen on d8.
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/llama-3.1-nemotron-ultra-253b-v1
+Response: <think>
+Okay, let's tackle this chess problem. First, I need to visualize the board based on the given FEN notation: 3qr2k/pbpp2pp/1p5N/3Q4/2P1
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Rxd8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf3
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-4-maverick:free
+Response: Qxd8
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-next-80b-a3b-thinking
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-code-fast-1
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qf6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qa5
+NEXT MODEL GOING TO THE PIPE
+(Nate) ➜  Nate git:(main) ✗
+
+
+## now with a threat
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nxf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qxf7#
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qxd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: Your best move is to move the queen to h4. The queen has the most options for attacking and defending in this position.
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/llama-3.1-nemotron-ultra-253b-v1
+Response: <think>
+Okay, let's tackle this chess problem. First, I need to visualize the board based on the given FEN notation and the piece positions. The FEN is 3qr2k/pbpp2pp/1p5N
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Rxe8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf3
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-4-maverick:free
+Traceback (most recent call last):
+  File "/Users/salvador.dali.disciple/aaa/chess-benchmark/week02/Nate/models_setup.py", line 118, in <module>
+    call_model("./system_prompt/based_on_claude.txt", model, "./query_prompt/lw-improved-assult.txt")
+  File "/Users/salvador.dali.disciple/aaa/chess-benchmark/week02/Nate/models_setup.py", line 90, in call_model
+    print("Response:", result['choices'][0]['message']['content'])
+                       ~~~~~~^^^^^^^^^^^
+KeyError: 'choices'
+
+Calling model google/gemini-2.5-flash-lite
+Response: Nxf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qxd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: <after_reading_board_state>
+There are a few possible moves for White in this position, such as Qxd4 which would capture the Black king's rook, or perhaps Nxd4 which would attack the Black queen.
+
+<response>
+Please use
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/llama-3.1-nemotron-ultra-253b-v1
+Response: <think>
+</think>
+
+dxe5
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Rb1
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-next-80b-a3b-thinking
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model x-ai/grok-code-fast-1
+Response:
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qf5
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Nb5
+NEXT MODEL GOING TO THE PIPE
+(Nate) ➜  Nate git:(main) ✗
+
+## Temperature 0.3, Max tokens 20, top_p 0.1
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Qxh7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Qd8+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Qh4]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qxd7
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nf3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Qg8+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qh5
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qd5
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qd7
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qe2
+NEXT MODEL GOING TO THE PIPE
+
+## and now adding to them the possible answers
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: <Marvin>
+Nf7
+</Marvin>
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: B
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Nf7]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qb7
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Qe8
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: (B): Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: C
+NEXT MODEL GOING TO THE PIPE
+
+## and now to compare to the simple prompt you are a chess grandmaster
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: B
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: The best move for white would be (C): Qb7. This move would put the black
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qb7
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: (B): Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qb7
+NEXT MODEL GOING TO THE PIPE
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: B: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: The best move for white in this situation would be (C): Qb7. This move would
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Qb7
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: (B): Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Qg8
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Qb7
+NEXT MODEL GOING TO THE PIPE

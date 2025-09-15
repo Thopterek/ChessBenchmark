@@ -1,0 +1,7 @@
+1. Fen notation of this particual example is this:
+
+6B1/8/3p4/8/7k/3Q4/8/K7
+
+2. White has to move right now
+
+3. Repond in the best move possible 

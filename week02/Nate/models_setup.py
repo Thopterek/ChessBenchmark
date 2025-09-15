@@ -82,7 +82,9 @@ def call_model(system_prompt: str, model_name: str, quest: str):
                 "role": "user",
                 "content": quest_prompt
             }],
-            "max_tokens": 50
+            "max_tokens": 20,
+            "temperature": 0.3,
+            "top_p": 0.1
         }
     )
     if response.status_code == 200:
@@ -107,10 +109,13 @@ if __name__ == "__main__":
     # two models that as for now have a chance to at least get the answer
     models = ["google/gemini-2.5-flash-lite", "openai/gpt-4.1-mini",
               "anthropic/claude-sonnet-4", "openai/gpt-3.5-turbo-instruct",
-              "nvidia/nemotron-nano-9b-v2:free", "deepseek/deepseek-chat-v3.1:free",
-              "meta-llama/llama-3.3-8b-instruct:free"] 
+              "deepseek/deepseek-chat-v3.1",
+              "meta-llama/llama-3.3-8b-instruct:free",
+              "openai/gpt-5-chat", "qwen/qwen3-coder", "meituan/longcat-flash-chat",
+              "mistralai/mistral-medium-3.1",
+              "baidu/ernie-4.5-vl-28b-a3b"] 
     #for num in range(0, 10, +1):
     for model in models:
         print(f"Calling model {Color.RED}{model}{Color.END}")
-        call_model("./prompt/objective.txt", model, "./prompt/howgood.txt")
+        call_model("./system_prompt/based_on_claude.txt", model, "./query_prompt/just_pawn/prompt_best.txt")
         print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")

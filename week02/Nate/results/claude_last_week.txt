@@ -1,0 +1,41 @@
+## RESULTS
+
+results of based_on_claude.txt and last_week_test.txt, no playing around with temperature for now
+the only thing updated is switching the board back to how it should be (black / white placement)
+
+## TESTS
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: <answer>
+Qxh6
+</answer>
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Qh5#
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: <answer>
+Qg8+
+</answer>
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Qe5]
+NEXT MODEL GOING TO THE PIPE
+Calling model nvidia/nemotron-nano-9b-v2:free
+Response: Queen Moves to H8
+
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1:free
+Response: <answer>Qd8</answer>
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nh2
+NEXT MODEL GOING TO THE PIPE
+(Nate) ➜  Nate git:(main) ✗
+
+## EVAL
+
+it actually didn't change anything, time to work on question / user prompt
