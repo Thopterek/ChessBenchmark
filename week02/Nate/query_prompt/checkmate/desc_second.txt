@@ -1,0 +1,31 @@
+(1A) === Simple Description ===
+
+Black queen is at d8.
+Black rooks are at a8 and f7.
+Black king is at g8.
+Black bishops are at c8 and c5.
+Black horse is at c6.
+White queen is at h6.
+White rooks are at a1 and h1.
+White king is at e1.
+White bishop is at c4.
+White horses are at g6 and d5.
+Black pawns are at a7, b7, c7, h7, d6, f6, e5 and f5.
+White pawns are at e4, d3, a2, b2, c2, f2, g2 and h2.
+
+(1B) === Detailed Description ===
+
+black rook is at a8 black bishop is at c8 black queen is at d8 black king is at g8.
+black pawns are at a7, b7, c7 and h7 black rook is at f7.
+black horse is at c6 black pawns are at d6 and f6 white horse is at g6 white queen is at h6.
+black bishop is at c5 white horse is at d5 black pawns are at e5 and f5.
+white bishop is at c4 white pawn is at e4.
+white pawn is at d3.
+white pawns are at a2, b2, c2, f2, g2 and h2.
+white rooks are at a1 and h1 white king is at e1.
+
+(2) === Turn order ===
+White has to move right now
+
+(3) === Question ===
+Repond in the best move possible

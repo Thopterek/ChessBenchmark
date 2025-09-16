@@ -42,7 +42,7 @@ def call_model(system_prompt: str, model_name: str, quest: str, temp: float):
                     "role": "user",
                     "content": quest_prompt
                 }],
-                "max_tokens": 20,
+                "max_tokens": 2000,
                 "temperature": temp,
                 "top_p": 0.1
             }
@@ -133,7 +133,7 @@ if __name__ == "__main__":
             response = call_model(
                 "./system_prompt/boc_code.txt",
                 model,
-                "./query_prompt/checkmate/b_second.txt",
+                "./query_prompt/checkmate/desc_second.txt",
                 0.1
             )
             
