@@ -1,6 +1,34 @@
+# ------------------
+# Syntax explanation
+# ------------------
+
 BA = best answer
 FM = first move
 SM = second move
+
+# ----------------------------
+## Self Notes from How to Eval
+# ----------------------------
+
+(A) factual consistency (how factually correct your LLM application is based on the respective context in your evals dataset)
+(B) answer relevancy (how relevant your LLM application’s outputs are based on the respective inputs in your evals dataset)
+(C) coherence (how logical and consistent your LLM application’s outputs are)
+(D) toxicity (whether your LLM application is outputting harmful content)
+(E) bias (pretty self-explanatory)
+
+your implementation of the scorer should take this into account
+and not penalize outputs that are equally correct but different from what you expect.
+
+(A) Loop through your evaluation dataset.
+(B) For each data point, run your LLM application based on the given input.
+(C) Once your LLM application has finished generating an output for a given data point,
+    compute a score for each of the metrics you’ve previously defined.
+(D) Identify and log failing metrics (metrics where the passing criteria wasn’t met).
+(E) Repeat steps A - D
+
+# -----------------------------------
+## All of the test puzzles as of know
+# -----------------------------------
 
 1. First puzzle we ever used in FEN notation
 

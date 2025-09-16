@@ -128,11 +128,12 @@ if __name__ == "__main__":
               "openai/gpt-5-chat", "qwen/qwen3-coder", "meituan/longcat-flash-chat",
               "mistralai/mistral-medium-3.1",
               "baidu/ernie-4.5-vl-28b-a3b"] 
+    # ADD MORE THINGS TO CHANGE LLMs HYPERPARAMETERS
     #for num in range(0, 10, +1):
     for model in models:
         print(f"Calling model {Color.RED}{model}{Color.END}")
-        call_model("./system_prompt/buzzword.txt",
+        call_model("./system_prompt/boc_code.txt",
                    model,
-                   "./query_prompt/checkmate/q_second.txt",
+                   "./query_prompt/checkmate/b_second.txt",
                    0.3)
         print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")
