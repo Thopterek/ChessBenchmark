@@ -1,0 +1,63 @@
+(1) === Created chess board ====
+
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 | ♜ |   | ♝ | ♚ |   |   |   | ♜ |
+| 7 |   | ♟ | ♟ |   |   | ♟ | ♟ | ♟ |
+| 6 | ♟ | ♝ |   | ♟ |   | ♞ |   |   |
+| 5 | ♞ |   |   | ♙ |   |   |   |   |
+| 4 | ♗ |   |   |   | ♙ |   | ♛ |   |
+| 3 |   |   | ♕ |   |   | ♘ |   |   |
+| 2 | ♙ | ♗ |   |   |   | ♙ | ♙ | ♙ |
+| 1 | ♖ | ♘ |   |   |   | ♖ | ♔ |   |
+
+(2) === The pieces are divided by colors per unicode ===
+
+| BLACK | WHITE |
+|-------|-------|
+|   ♟   |   ♙   |
+|   ♜   |   ♖   |
+|   ♞   |   ♘   |
+|   ♝   |   ♗   |
+|   ♛   |   ♕   |
+|   ♚   |   ♔   |
+
+(3A) === Detailed FEN notation for this example ===
+
+r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1
+
+(3B) === Simple FEN notation for this example ===
+
+r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1
+
+(4A) === Simple Description ===
+
+Black queen is at g4.
+Black rooks are at a8 and h8.
+Black king is at d8.
+Black bishops are at c8 and b6.
+Black horses are at f6 and a5.
+White queen is at c3.
+White rooks are at a1 and f1.
+White king is at g1.
+White bishops are at a4 and b2.
+White horses are at f3 and b1.
+Black pawns are at b7, c7, f7, g7, h7, a6 and d6.
+White pawns are at d5, e4, a2, f2, g2 and h2.
+
+(4B) === Detailed Description ===
+
+black rooks are at a8 and h8 black bishop is at c8 black king is at d8.
+black pawns are at b7, c7, f7, g7 and h7.
+black pawns are at a6 and d6 black bishop is at b6 black horse is at f6.
+black horse is at a5 white pawn is at d5.
+white bishop is at a4 white pawn is at e4 black queen is at g4.
+white queen is at c3 white horse is at f3.
+white pawns are at a2, f2, g2 and h2 white bishop is at b2.
+white rooks are at a1 and f1 white horse is at b1 white king is at g1.
+
+(5) === Turn order ===
+White has to move right now
+
+(6) === Question ===
+Repond in the best move possible

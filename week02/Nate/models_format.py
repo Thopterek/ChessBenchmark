@@ -131,10 +131,10 @@ if __name__ == "__main__":
             print(f"{Color.GREEN}Call #{call_num + 1}/{num_calls}{Color.END}")
             
             response = call_model(
-                "./system_prompt/boc_code.txt",
+                "./system_prompt/prompt_02.txt",
                 model,
-                "./query_prompt/checkmate/desc_second.txt",
-                0.1
+                "./query_prompt/01quest.txt",
+                0.3
             )
             
             # Clean up the response to get just the move
