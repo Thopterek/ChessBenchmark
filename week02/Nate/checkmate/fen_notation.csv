@@ -1,0 +1,123 @@
+BA = best answer
+FM = first move
+SM = second move
+
+1. First puzzle we ever used in FEN notation
+
+3qr2k/pbpp2pp/1p5N/3Q2b1/2P1P3/P7/1PP2PPP/R4RK1 w - - 0 1
+
+FM BA: Qg8+
+
+SM BA: Nf7#
+
+2. Second puzzle in FEN
+
+r1bq2k1/ppp2r1p/2np1pNQ/2bNpp2/2B1P3/3P4/PPP2PPP/R3K2R w KQ - 0 1
+
+FM BA: Nxf6+
+
+SM BA: Qf8#
+
+3. Third Puzzle
+
+r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1
+
+FM BA: Qxf6+
+
+SM BA: Bxf6#
+
+4. Fourth one
+
+r2q1k1r/ppp1n1Np/1bnpB2B/8/1P1pb1P1/2P4P/P4P2/R2Q1RK1 w - - 0 1
+
+FM BA: Nh5+
+
+SM BA: Nf6#
+
+5. Five
+
+r1b2rk1/ppp2p1p/1b1p1B2/5q1Q/2Bp4/2P5/PP3PPP/R3R1K1 w - - 0 1
+
+FM BA: Qxf7+
+
+SM BA: Re8#
+
+6. Six
+
+1rqk3r/p1p1pppp/2Q1b3/3pN3/3P4/B7/P4PPP/b3R1K1 w - - 0 1
+
+FM BA: Nxf7+
+
+SM BA: Bxe7#
+
+7. Seven
+
+r2k1b1Q/pppn3p/3p4/1B5n/5pb1/5N2/PPPP1qPP/RNBKR3 w - - 0 1
+
+FM BA: Qxf8+
+
+SM BA: Re8#
+
+8. Eight
+
+r4r2/pQ3ppp/2np4/2bk4/5P2/6P1/PPP5/R1B1KB1q w Q - 0 1
+
+FM BA: Qb3+
+
+SM BA: Qd3#
+
+9. Nine
+
+rnbqr2k/ppppn1p1/1b5p/6NQ/2BPPB2/8/PPP3PP/RN3K1R w - - 0 1
+
+FM BA: Qxh6+
+
+SM BA: Be5#
+
+10. Ten
+
+r1bk3b/1pppq3/2n3n1/1p2P1BQ/3P4/8/PPP3P1/5RK1 w - - 0 1
+
+FM BA: Qh8+
+
+SM BA: Rf8#
+
+11. Eleven
+
+r1bk2nr/p2p1pNp/n2B4/1p1NP2P/6P1/3P1Q2/P1P1K3/q5b1 w - - 0 1
+
+FM BA: Qf6+
+
+SM BA: Be7#
+
+12. Twelve 
+
+rnb2k1r/ppp1qBpp/8/4N2Q/8/2n3b1/PPPP2K1/R1B2R2 w - - 0 1
+
+FM BA: Ng6+
+
+SM BA: Qxh8#
+
+13. 13 13 13
+
+rnbk3r/ppppb2p/3N1n2/7Q/4P3/2N5/PPPP3P/R1B1KB1q w Q - 0 1
+
+FM BA: Qe8+
+
+SM BA: Nf7#
+
+14.
+
+r1b2Qnr/p1pk3p/1pnp4/6q1/2BPP3/8/PPP3PP/RN3RK1 w - - 0 1
+
+FM BA: Be6+
+
+SM BA: Qf7#
+
+15.
+
+r4b1r/ppp1qb2/2np3p/5R2/3PP2k/4B1NP/PPP3K1/8 w - - 0 1
+
+FM BA: Rh5+
+
+SM BA: Nf5#

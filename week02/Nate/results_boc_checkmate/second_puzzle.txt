@@ -1,0 +1,8 @@
+# Results for second puzzle in checkmate folder with fen_notation.csv
+# System prompt is based on claud: trying to present as much relevant informations
+
+# Testing assumptions: do small model outperform bigger when given bigger system prompt
+# or does it also work the other way around, the bigger models perform better with smaller system prompts
+
+# Generally we saw the best results for finding the answer to the first puzzle using this setup
+# max_tokens = 20, temperature = 0.3, top_p = 0.1

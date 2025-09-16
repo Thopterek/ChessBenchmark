@@ -53,7 +53,7 @@ def tokens_from_embedded(embeddings, text, tokenizer):
     return avg_embedd
 
 # Generic Function to call the model 
-def call_model(system_prompt: str, model_name: str, quest: str):
+def call_model(system_prompt: str, model_name: str, quest: str, temp: float):
     try:
         with open(system_prompt, 'r', encoding='utf-8') as file:
             sys_prompt = file.read().strip()
@@ -83,7 +83,7 @@ def call_model(system_prompt: str, model_name: str, quest: str):
                 "content": quest_prompt
             }],
             "max_tokens": 20,
-            "temperature": 0.3,
+            "temperature": temp,
             "top_p": 0.1
         }
     )
@@ -101,8 +101,22 @@ class Color:
     END = '\033[0m'
 
 if __name__ == "__main__":
-    #embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt") 
+    #embedd_eu_decision = lb_embedding("./prompts/prompt_00.txt")
+    # 2000 tokens 6 illegal 
+    # 20 tokens 7 illegal
+    # simple.txt 2000 tokens, 7 illegal 
+    #Calling model openai/gpt-5-chat
+    #Response: Nf7+
+    #NEXT MODEL GOING TO THE PIPE
+    #Calling model qwen/qwen3-coder
+    #Response: Qxg8+
     #embedd_fide_rules = lb_embedding("./prompts/prompt_01.txt")
+    # max tokens 2000 and Based on Claude
+    # Calling model openai/gpt-5-chat
+    # Response: Qg8+
+    # NEXT MODEL GOING TO THE PIPE
+    # Calling model qwen/qwen3-coder
+    # Response: Qh5
     print("\n------------------------")
     print("Going to test the models")
     print("------------------------")
@@ -117,5 +131,8 @@ if __name__ == "__main__":
     #for num in range(0, 10, +1):
     for model in models:
         print(f"Calling model {Color.RED}{model}{Color.END}")
-        call_model("./system_prompt/based_on_claude.txt", model, "./query_prompt/just_pawn/prompt_best.txt")
+        call_model("./system_prompt/buzzword.txt",
+                   model,
+                   "./query_prompt/checkmate/q_second.txt",
+                   0.3)
         print(f"{Color.GREEN}NEXT MODEL GOING TO THE PIPE{Color.END}")

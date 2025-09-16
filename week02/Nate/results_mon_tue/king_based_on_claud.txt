@@ -1,0 +1,152 @@
+## call_model("./system_prompt/based_on_claude.txt", model, "./query_prompt/king_move/simple.txt")
+##            "max_tokens": 20,
+##            "temperature": 0.3,
+##            "top_p": 0.1
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Nc7+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nxd7+
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Nf6]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Nc8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: f7=Q+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: f7
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Kb5
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nd6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Nc7+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nxd7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Nf6]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Nc8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Nc5#
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: f7
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Kc5
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nd6
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Nc7+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nxd7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Nf6]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Nc8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Nc5+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: f7
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Kb5
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nd5
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+
+------------------------
+Going to test the models
+------------------------
+Calling model google/gemini-2.5-flash-lite
+Response: Nf7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-4.1-mini
+Response: Nc7+
+NEXT MODEL GOING TO THE PIPE
+Calling model anthropic/claude-sonnet-4
+Response: Nxd7
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-3.5-turbo-instruct
+Response: [Marvin][text : Nf6]
+NEXT MODEL GOING TO THE PIPE
+Calling model deepseek/deepseek-chat-v3.1
+Response: Nc8
+NEXT MODEL GOING TO THE PIPE
+Calling model meta-llama/llama-3.3-8b-instruct:free
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE
+Calling model openai/gpt-5-chat
+Response: Nc5+
+NEXT MODEL GOING TO THE PIPE
+Calling model qwen/qwen3-coder
+Response: f7
+NEXT MODEL GOING TO THE PIPE
+Calling model meituan/longcat-flash-chat
+Response: Kb5
+NEXT MODEL GOING TO THE PIPE
+Calling model mistralai/mistral-medium-3.1
+Response: Nd5
+NEXT MODEL GOING TO THE PIPE
+Calling model baidu/ernie-4.5-vl-28b-a3b
+Response: Nc3
+NEXT MODEL GOING TO THE PIPE

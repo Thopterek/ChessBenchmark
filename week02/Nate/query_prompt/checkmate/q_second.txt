@@ -1,0 +1,5 @@
+THIS FEN
+
+r1bq2k1/ppp2r1p/2np1pNQ/2bNpp2/2B1P3/3P4/PPP2PPP/R3K2R w KQ - 0 1
+
+BEST MOVE?!
