@@ -44,7 +44,8 @@ def call_model(system_prompt: str, model_name: str, quest: str, temp: float):
                     "role": "user",
                     "content": quest_prompt
                 }],
-                "max_tokens": 50
+                "max_tokens": 50,
+                # "include_reasoning" : True,
                 # "temperature": temp,
                 # "top_p": 0.1
             }
@@ -147,6 +148,7 @@ def format_results_table(results_dict):
 # ---- MAIN LOOP ----
 if __name__ == "__main__":
     models = [
+        "x-ai/grok-code-fast-1",
         "google/gemini-2.5-flash-lite", 
         "openai/gpt-4.1-mini",
         "anthropic/claude-sonnet-4", 
@@ -162,7 +164,7 @@ if __name__ == "__main__":
     
     results = defaultdict(list)
     num_calls = 10
-    fen_str = "r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1"
+    fen_str = "3qr2k/pbpp2pp/1p5N/3Q4/2P1P1b1/P7/1PP2PPP/R3RK2 w - - 0 1"
     
     for model in models:
         print(f"\nTesting {model}")
@@ -171,9 +173,9 @@ if __name__ == "__main__":
             print(f" Call #{call_num+1}/{num_calls}")
             board = chess.Board(fen_str)  # reset board for each round
             response = call_model(
-                "./system_prompt/boc_code.txt",
+                "./system_prompt/prompt_02polish.txt",
                 model,
-                "./query_prompt/02quest.txt",
+                "./query_prompt/01quest_polish.txt",
                 0.3
             )
             
@@ -189,7 +191,7 @@ if __name__ == "__main__":
     print("\nFINAL RESULTS:\n")
     print(table_output)
     
-    with open("model_results.md", "w", encoding="utf-8") as f:
+    with open("z_prompt_02polish50_01quest.md", "w", encoding="utf-8") as f:
         f.write("# Chess Move Prediction Results with Legality & Stockfish Eval\n\n")
         f.write(table_output)
     
