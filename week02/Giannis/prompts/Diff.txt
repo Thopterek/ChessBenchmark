@@ -1,0 +1,15 @@
+White Pieces
+King: g1
+Queen: d5
+Rook: a1, e1
+Knight: h6
+Pawns: a3, b2, c2, c4, e4, f2, g2, h2
+Black Pieces
+King: h8
+Queen: d8
+Rook: e8
+Bishop: b7, g5
+Pawns: a7, b6, c7, d7, f7, g7
+
+White to play.
+Given the prompt above chose the best move?

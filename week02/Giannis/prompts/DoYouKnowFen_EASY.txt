@@ -1,0 +1,2 @@
+Considering the FEN notation of this match: 6Q1/8/8/8/6K1/8/8/5k2 w - - 0 1
+I want you to list every active piece and its location using algebraic notation
