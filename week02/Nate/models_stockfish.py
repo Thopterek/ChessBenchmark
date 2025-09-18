@@ -170,7 +170,7 @@ if __name__ == "__main__":
     num_calls = 10
     # testing if its the same variance for another puzzle
     # first gender bias and later on the languages
-    fen_str = "r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1"
+    fen_str = "r1b2rk1/ppp2p1p/1b1p1B2/5q1Q/2Bp4/2P5/PP3PPP/R3R1K1 w - - 0 1"
     biases = [
         "english",
         "china",
@@ -180,16 +180,17 @@ if __name__ == "__main__":
         "romanian"
     ]
     for bias in biases:
+        print(f"\nGoing for bias {Color.GREEN}{bias}{Color.END}")
+        results = defaultdict(list)
         for model in models:
-            print(f"\nTesting {model}")
-            
+            print(f"\nTesting {Color.RED}{model}{Color.END}")
             for call_num in range(num_calls):
                 print(f" Call #{call_num+1}/{num_calls}")
                 board = chess.Board(fen_str)  # reset board for each round
                 response = call_model(
                     f"./system_prompt/simple_lang_gender/prompt_02{bias}.txt",
                     model,
-                    f"./query_prompt/03quest_lang/03quest_{bias}.txt",
+                    f"./query_prompt/05quest_lang/05quest_{bias}.txt",
                     0.3
                 )
                 
@@ -199,13 +200,11 @@ if __name__ == "__main__":
                 
                 print(f"  Move: {move_result['move']} | Legal: {move_result['legal']} | Eval: {move_result['eval']}")
                 time.sleep(1)
-        
-        # Final results
         table_output = format_results_table(results)
         print("\nFINAL RESULTS:\n")
         print(table_output)
         
-        with open(f"n_hyper_prompt_02{bias}_03quest.md", "w", encoding="utf-8") as f:
+        with open(f"s_hyper_prompt_02{bias}_05quest.md", "w", encoding="utf-8") as f:
             f.write("# Hyper version temp 0.3, reasoning False, max tokens 50, top_p 1 {bias}\n\n")
             f.write(table_output)
     genders = [
@@ -213,8 +212,10 @@ if __name__ == "__main__":
         "english_man"
     ]
     for gen in genders:
+        print(f"Bias {Color.GREEN}{gen}{Color.END}")
+        results = defaultdict(list)
         for model in models:
-            print(f"\nTesting {model}")
+            print(f"\nTesting {Color.RED}{model}{Color.END}")
             
             for call_num in range(num_calls):
                 print(f" Call #{call_num+1}/{num_calls}")
@@ -222,7 +223,7 @@ if __name__ == "__main__":
                 response = call_model(
                     f"./system_prompt/simple_lang_gender/prompt_02{gen}.txt",
                     model,
-                    f"./query_prompt/03quest_lang/03quest_english.txt",
+                    f"./query_prompt/05quest_lang/05quest_english.txt",
                     0.3
                 )
                 
@@ -238,7 +239,7 @@ if __name__ == "__main__":
         print("\nFINAL RESULTS:\n")
         print(table_output)
         
-        with open(f"n_hyper_prompt_02{gen}_03quest.md", "w", encoding="utf-8") as f:
+        with open(f"s_hyper_prompt_02{gen}_05quest.md", "w", encoding="utf-8") as f:
             f.write(f"# Hyper version temp 0.3, reasoning False, max tokens 50, top_p 1 {gen}\n\n")
             f.write(table_output) 
     
