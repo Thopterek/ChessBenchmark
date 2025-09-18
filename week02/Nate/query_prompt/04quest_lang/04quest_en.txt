@@ -1,0 +1,57 @@
+Use those tokens to differentiate data <question><board><context><answer><FEN>
+but don't use them to formulate the answer, follow the strict guidelines of:
+<answer>[content inside]</answer>
+
+Context to <FEN> is:
+What is FEN?
+FEN (Forsyth-Edwards Notation) is a standard notation for describing a particular position in a chess game. It consists of six fields that define the board position, active player, castling rights, en passant target, halfmove clock, and fullmove number.
+How to Use the FEN Viewer
+Enter a valid FEN string in the input box or paste from a game position.
+The chessboard will update to reflect the given position.
+Use the board controls to make moves and analyze the position.
+Click the "Download Position" button to save the board as an image.
+Benefits of Using a FEN Viewer
+Quickly analyze and visualize chess positions
+Study middle-game and endgame scenarios
+Share chess positions easily with others
+Improve your understanding of different positions
+Example FEN
+rnbqkb1r/pppp1ppp/5n2/4p3/8/3P1N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3
+This FEN string represents a common opening position where White is to move.
+
+<question>Based on the board provided below:
+Find the best possible move for the white player,
+there is a solution to achieve mate in two based on it 
+
+<FEN>
+r2q1k1r/ppp1n1Np/1bnpB2B/8/1P1pb1P1/2P4P/P4P2/R2Q1RK1 w - - 0 1
+</FEN>
+
+<board>
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 | ♜ |   |   | ♛ |   | ♚ |   | ♜ |
+| 7 | ♟ | ♟ | ♟ |   | ♞ |   | ♘ | ♟ |
+| 6 |   | ♝ | ♞ | ♟ | ♗ |   |   | ♗ |
+| 5 |   |   |   |   |   |   |   |   |
+| 4 |   | ♙ |   | ♟ | ♝ |   | ♙ |   |
+| 3 |   |   | ♙ |   |   |   |   | ♙ |
+| 2 | ♙ |   |   |   |   | ♙ |   |   |
+| 1 | ♖ |   |   | ♕ |   | ♖ | ♔ |   |
+</board>
+
+<context>
+| BLACK | WHITE |
+|-------|-------|
+|   ♟   |   ♙   |
+|   ♜   |   ♖   |
+|   ♞   |   ♘   |
+|   ♝   |   ♗   |
+|   ♛   |   ♕   |
+|   ♚   |   ♔   |
+</context>
+<answer>
+Formulate the answer as just one move, example:
+Qe3
+</answer>
+</question>

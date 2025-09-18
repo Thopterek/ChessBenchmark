@@ -1,0 +1,65 @@
+Używaj tych tokenów do rozróżnienia danych: <question><board><context><answer><FEN>  
+ale NIE używaj ich do formułowania odpowiedzi. Ściśle przestrzegaj reguły:  
+<answer>[treść wewnątrz]</answer>  
+
+Kontekst do <FEN>:  
+Czym jest FEN?  
+FEN (Forsyth-Edwards Notation) to standardowa notacja opisu konkretnej pozycji w partii szachowej.  
+Składa się z sześciu pól, które określają: ustawienie figur, gracza na ruchu, prawa do roszady, pole do bicia w przelocie, zegar półruchów oraz numer ruchu.  
+
+Jak korzystać z przeglądarki FEN?  
+- Wpisz poprawny ciąg FEN w pole tekstowe lub wklej go z pozycji partii.  
+- Szachownica zaktualizuje się, aby odzwierciedlić podaną pozycję.  
+- Użyj przycisków do wykonywania ruchów i analizowania pozycji.  
+- Kliknij „Pobierz pozycję”, aby zapisać szachownicę jako obraz.  
+
+Korzyści z używania przeglądarki FEN:  
+- Szybka analiza i wizualizacja pozycji szachowych  
+- Studiowanie scenariuszy środkowej i końcowej fazy gry  
+- Łatwe udostępnianie pozycji innym  
+- Pogłębianie zrozumienia różnych ustawień  
+
+Przykładowy FEN:  
+rnbqkb1r/pppp1ppp/5n2/4p3/8/3P1N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3  
+
+Ten zapis FEN przedstawia typową pozycję otwarcia, w której białe mają ruch.  
+
+<question>  
+Na podstawie poniższej szachownicy:  
+Znajdź najlepszy możliwy ruch dla białych.  
+Istnieje rozwiązanie prowadzące do mata w dwóch ruchach.  
+
+<FEN>  
+r1bq2k1/ppp2r1p/2np1pNQ/2bNpp2/2B1P3/3P4/PPP2PPP/R3K2R w KQ - 0 1
+</FEN>  
+
+<board>  
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 | ♜ |   | ♝ | ♛ |   |   | ♚ |   |
+| 7 | ♟ | ♟ | ♟ |   |   | ♜ |   | ♟ |
+| 6 |   |   | ♞ | ♟ |   | ♟ | ♘ | ♕ |
+| 5 |   |   | ♝ | ♘ | ♟ | ♟ |   |   |
+| 4 |   |   | ♗ |   | ♙ |   |   |   |
+| 3 |   |   |   | ♙ |   |   |   |   |
+| 2 | ♙ | ♙ | ♙ |   |   | ♙ | ♙ | ♙ |
+| 1 | ♖ |   |   |   | ♔ |   |   | ♖ |
+</board>  
+
+<context>  
+| CZARNE | BIAŁE |  
+|-------|--------|  
+|   ♟   |   ♙    |  
+|   ♜   |   ♖    |  
+|   ♞   |   ♘    |  
+|   ♝   |   ♗    |  
+|   ♛   |   ♕    |  
+|   ♚   |   ♔    |  
+</context>  
+
+<answer>  
+Sformułuj odpowiedź jako dokładnie jeden ruch, przykład:  
+Qe3  
+</answer>  
+</question>
+

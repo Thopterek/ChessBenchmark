@@ -1,0 +1,60 @@
+Folosește acești tokeni pentru a diferenția datele <question><board><context><answer><FEN>  
+dar nu îi folosi pentru a formula răspunsul, urmează strict instrucțiunile:  
+<answer>[conținutul în interior]</answer>  
+
+Context pentru <FEN>:  
+Ce este FEN?  
+FEN (Forsyth-Edwards Notation) este o notație standard pentru descrierea unei anumite poziții într-o partidă de șah. Ea constă din șase câmpuri care definesc poziția pieselor pe tablă, jucătorul la mutare, drepturile de rocada, pătratul en passant, ceasul de jumătate de mutare și numărul mutării complete.  
+
+Cum să folosești vizualizatorul FEN  
+Introdu un șir FEN valid în caseta de intrare sau lipește dintr-o poziție de joc.  
+Tabla de șah se va actualiza pentru a reflecta poziția dată.  
+Folosește comenzile tablei pentru a face mutări și a analiza poziția.  
+Apasă pe butonul „Descarcă poziția” pentru a salva tabla ca imagine.  
+
+Beneficiile utilizării unui vizualizator FEN  
+- Analizează și vizualizează rapid poziții de șah  
+- Studiază scenarii de mijloc și de final de joc  
+- Împarte cu ușurință poziții de șah cu alții  
+- Îmbunătățește înțelegerea diferitelor poziții  
+
+Exemplu FEN  
+rnbqkb1r/pppp1ppp/5n2/4p3/8/3P1N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3  
+Acest șir FEN reprezintă o poziție comună de deschidere unde Albul este la mutare.  
+
+<question>Bazându-te pe tabla furnizată mai jos:  
+Găsește cea mai bună mutare posibilă pentru jucătorul cu alb,  
+există o soluție pentru a obține mat în două mutări pornind de aici  
+
+<FEN>
+r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1
+</FEN>
+
+<board>
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 | ♜ |   | ♝ | ♚ |   |   |   | ♜ |
+| 7 |   | ♟ | ♟ |   |   | ♟ | ♟ | ♟ |
+| 6 | ♟ | ♝ |   | ♟ |   | ♞ |   |   |
+| 5 | ♞ |   |   | ♙ |   |   |   |   |
+| 4 | ♗ |   |   |   | ♙ |   | ♛ |   |
+| 3 |   |   | ♕ |   |   | ♘ |   |   |
+| 2 | ♙ | ♗ |   |   |   | ♙ | ♙ | ♙ |
+| 1 | ♖ | ♘ |   |   |   | ♖ | ♔ |   |
+</board>
+
+<context>
+| NEGRU | ALB |
+|-------|-----|
+|   ♟   |   ♙   |
+|   ♜   |   ♖   |
+|   ♞   |   ♘   |
+|   ♝   |   ♗   |
+|   ♛   |   ♕   |
+|   ♚   |   ♔   |
+</context>
+<answer>
+Formulează răspunsul ca o singură mutare, exemplu:  
+Regina mută la E3
+</answer>
+</question>

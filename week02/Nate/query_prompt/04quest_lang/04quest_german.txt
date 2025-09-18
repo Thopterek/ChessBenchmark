@@ -1,0 +1,64 @@
+Verwende diese Tokens, um die Daten zu unterscheiden: <question><board><context><answer><FEN>  
+aber benutze sie NICHT, um die Antwort zu formulieren. Befolge strikt die Vorgaben von:  
+<answer>[Inhalt hier]</answer>  
+
+Kontext zu <FEN> ist:  
+Was ist FEN?  
+FEN (Forsyth-Edwards Notation) ist eine Standardnotation zur Beschreibung einer bestimmten Stellung in einer Schachpartie.  
+Sie besteht aus sechs Feldern, die die Brettstellung, den Spieler am Zug, die Rochaderechte, ein mögliches En-passant-Zielfeld, die Halbzug-Uhr und die Zugnummer definieren.  
+
+Wie benutzt man den FEN-Viewer?  
+- Gib eine gültige FEN-Zeichenkette in das Eingabefeld ein oder füge sie aus einer Partie ein.  
+- Das Schachbrett aktualisiert sich, um die Stellung darzustellen.  
+- Verwende die Brett-Steuerungen, um Züge zu machen und die Stellung zu analysieren.  
+- Klicke auf „Download Position“, um das Brett als Bild zu speichern.  
+
+Vorteile der Verwendung eines FEN-Viewers:  
+- Schnelle Analyse und Visualisierung von Schachstellungen  
+- Studium von Mittelspiel- und Endspiel-Szenarien  
+- Einfaches Teilen von Schachstellungen mit anderen  
+- Verbesserung des Verständnisses verschiedener Stellungen  
+
+Beispiel-FEN:  
+rnbqkb1r/pppp1ppp/5n2/4p3/8/3P1N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3  
+
+Diese FEN-Zeichenkette stellt eine typische Eröffnungsstellung dar, in der Weiß am Zug ist.  
+
+<question>  
+Basierend auf dem unten angegebenen Brett:  
+Finde den bestmöglichen Zug für Weiß.  
+Es gibt eine Lösung, um in zwei Zügen mattzusetzen.  
+
+<FEN>  
+r2q1k1r/ppp1n1Np/1bnpB2B/8/1P1pb1P1/2P4P/P4P2/R2Q1RK1 w - - 0 1
+</FEN>  
+
+<board>  
+|   | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| 8 | ♜ |   |   | ♛ |   | ♚ |   | ♜ |
+| 7 | ♟ | ♟ | ♟ |   | ♞ |   | ♘ | ♟ |
+| 6 |   | ♝ | ♞ | ♟ | ♗ |   |   | ♗ |
+| 5 |   |   |   |   |   |   |   |   |
+| 4 |   | ♙ |   | ♟ | ♝ |   | ♙ |   |
+| 3 |   |   | ♙ |   |   |   |   | ♙ |
+| 2 | ♙ |   |   |   |   | ♙ |   |   |
+| 1 | ♖ |   |   | ♕ |   | ♖ | ♔ |   |
+</board>  
+
+<context>  
+| SCHWARZ | WEISS |  
+|-------|---------|
+|   ♟   |   ♙     |  
+|   ♜   |   ♖     |  
+|   ♞   |   ♘     |  
+|   ♝   |   ♗     |  
+|   ♛   |   ♕     |  
+|   ♚   |   ♔     |  
+</context>  
+
+<answer>  
+Formuliere die Antwort als genau einen Zug, Beispiel:  
+Qe3  
+</answer>  
+</question>

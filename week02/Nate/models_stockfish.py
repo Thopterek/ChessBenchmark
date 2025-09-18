@@ -45,9 +45,9 @@ def call_model(system_prompt: str, model_name: str, quest: str, temp: float):
                     "content": quest_prompt
                 }],
                 "max_tokens": 50,
-                # "include_reasoning" : True,
-                # "temperature": temp,
-                # "top_p": 0.1
+                "include_reasoning" : False,
+                "temperature": temp,
+                "top_p": 1
             }
         )
         
@@ -144,7 +144,11 @@ def format_results_table(results_dict):
             )
     
     return "\n".join([header, separator] + rows)
-
+# Debug colors
+class Color:
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    END = '\033[0m'
 # ---- MAIN LOOP ----
 if __name__ == "__main__":
     models = [
@@ -167,34 +171,75 @@ if __name__ == "__main__":
     # testing if its the same variance for another puzzle
     # first gender bias and later on the languages
     fen_str = "r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1 w - - 0 1"
-    
-    for model in models:
-        print(f"\nTesting {model}")
+    biases = [
+        "english",
+        "china",
+        "german",
+        "greek",
+        "polish",
+        "romanian"
+    ]
+    for bias in biases:
+        for model in models:
+            print(f"\nTesting {model}")
+            
+            for call_num in range(num_calls):
+                print(f" Call #{call_num+1}/{num_calls}")
+                board = chess.Board(fen_str)  # reset board for each round
+                response = call_model(
+                    f"./system_prompt/simple_lang_gender/prompt_02{bias}.txt",
+                    model,
+                    f"./query_prompt/03quest_lang/03quest_{bias}.txt",
+                    0.3
+                )
+                
+                move_response = response.split("\n")[0].strip()
+                move_result = parse_and_evaluate(move_response, board)
+                results[model].append(move_result)
+                
+                print(f"  Move: {move_result['move']} | Legal: {move_result['legal']} | Eval: {move_result['eval']}")
+                time.sleep(1)
         
-        for call_num in range(num_calls):
-            print(f" Call #{call_num+1}/{num_calls}")
-            board = chess.Board(fen_str)  # reset board for each round
-            response = call_model(
-                "./system_prompt/prompt_02romanian.txt",
-                model,
-                "./query_prompt/02quest.txt",
-                0.3
-            )
+        # Final results
+        table_output = format_results_table(results)
+        print("\nFINAL RESULTS:\n")
+        print(table_output)
+        
+        with open(f"n_hyper_prompt_02{bias}_03quest.md", "w", encoding="utf-8") as f:
+            f.write("# Hyper version temp 0.3, reasoning False, max tokens 50, top_p 1 {bias}\n\n")
+            f.write(table_output)
+    genders = [
+        "english_woman",
+        "english_man"
+    ]
+    for gen in genders:
+        for model in models:
+            print(f"\nTesting {model}")
             
-            move_response = response.split("\n")[0].strip()
-            move_result = parse_and_evaluate(move_response, board)
-            results[model].append(move_result)
-            
-            print(f"  Move: {move_result['move']} | Legal: {move_result['legal']} | Eval: {move_result['eval']}")
-            time.sleep(1)
-    
-    # Final results
-    table_output = format_results_table(results)
-    print("\nFINAL RESULTS:\n")
-    print(table_output)
-    
-    with open("zd_prompt_02romanian50_01quest.md", "w", encoding="utf-8") as f:
-        f.write("# Chess Move Prediction Results with Legality & Stockfish Eval\n\n")
-        f.write(table_output)
+            for call_num in range(num_calls):
+                print(f" Call #{call_num+1}/{num_calls}")
+                board = chess.Board(fen_str)  # reset board for each round
+                response = call_model(
+                    f"./system_prompt/simple_lang_gender/prompt_02{gen}.txt",
+                    model,
+                    f"./query_prompt/03quest_lang/03quest_english.txt",
+                    0.3
+                )
+                
+                move_response = response.split("\n")[0].strip()
+                move_result = parse_and_evaluate(move_response, board)
+                results[model].append(move_result)
+                
+                print(f"  Move: {move_result['move']} | Legal: {move_result['legal']} | Eval: {move_result['eval']}")
+                time.sleep(1)
+        
+        # Final results
+        table_output = format_results_table(results)
+        print("\nFINAL RESULTS:\n")
+        print(table_output)
+        
+        with open(f"n_hyper_prompt_02{gen}_03quest.md", "w", encoding="utf-8") as f:
+            f.write(f"# Hyper version temp 0.3, reasoning False, max tokens 50, top_p 1 {gen}\n\n")
+            f.write(table_output) 
     
     engine.quit()

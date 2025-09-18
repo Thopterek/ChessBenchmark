@@ -193,7 +193,7 @@ def create_chess_board(fen):
 
 if __name__ == "__main__":
     # FEN notation for the given board position
-    fen_notation = "r1bk3r/1pp2ppp/pb1p1n2/n2P4/B3P1q1/2Q2N2/PB3PPP/RN3RK1"
+    fen_notation = "r1b2rk1/ppp2p1p/1b1p1B2/5q1Q/2Bp4/2P5/PP3PPP/R3R1K1 w - - 0 1"
     # Generate and print the chess board
     print(create_chess_board(fen_notation))
     create_chess_board(fen_notation)
