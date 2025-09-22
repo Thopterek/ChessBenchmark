@@ -1,0 +1,33 @@
+Model,Call#,Move,Legal,UCI,Eval,Normalized
+google/gemini-2.5-flash-lite,1,Qh5,True,d5h5,-657 cp,0.171
+google/gemini-2.5-flash-lite,2,Qh5,True,d5h5,-642 cp,0.179
+google/gemini-2.5-flash-lite,3,Qh5,True,d5h5,-641 cp,0.179
+google/gemini-2.5-flash-lite,4,Qh5,True,d5h5,-637 cp,0.181
+google/gemini-2.5-flash-lite,5,Qh5,True,d5h5,-616 cp,0.192
+google/gemini-2.5-flash-lite,6,Qh5,True,d5h5,-644 cp,0.178
+google/gemini-2.5-flash-lite,7,Qh5,True,d5h5,-615 cp,0.193
+google/gemini-2.5-flash-lite,8,Qh5,True,d5h5,-627 cp,0.186
+google/gemini-2.5-flash-lite,9,Qh5,True,d5h5,-625 cp,0.188
+google/gemini-2.5-flash-lite,10,Qh5,True,d5h5,-633 cp,0.183
+google/gemini-2.5-flash-lite,11,Qh5,True,d5h5,-638 cp,0.181
+google/gemini-2.5-flash-lite,12,Qh5,True,d5h5,-627 cp,0.186
+google/gemini-2.5-flash-lite,13,Qh5,True,d5h5,-617 cp,0.192
+google/gemini-2.5-flash-lite,14,Qh5,True,d5h5,-633 cp,0.183
+google/gemini-2.5-flash-lite,15,Qh5,True,d5h5,-630 cp,0.185
+google/gemini-2.5-flash-lite,16,Qh5,True,d5h5,-624 cp,0.188
+google/gemini-2.5-flash-lite,17,Qh5,True,d5h5,-627 cp,0.186
+google/gemini-2.5-flash-lite,18,Qh5,True,d5h5,-651 cp,0.174
+google/gemini-2.5-flash-lite,19,Qh5,True,d5h5,-635 cp,0.182
+google/gemini-2.5-flash-lite,20,Qh5,True,d5h5,-629 cp,0.185
+google/gemini-2.5-flash-lite,21,Qh5,True,d5h5,-635 cp,0.182
+google/gemini-2.5-flash-lite,22,Qh5,True,d5h5,-630 cp,0.185
+google/gemini-2.5-flash-lite,23,Qh5,True,d5h5,-631 cp,0.184
+google/gemini-2.5-flash-lite,24,Qh5,True,d5h5,-632 cp,0.184
+google/gemini-2.5-flash-lite,25,Qh5,True,d5h5,-633 cp,0.183
+,,,,,,
+=== Summary Statistics ===,,,,,,
+Average Normalized Value,,,,,0.184,
+Standard Deviation,,,,,0.005,
+Mean Absolute Error (from 0.5),,,,,0.316,
+Illegal Moves (%),,,,,0.00%,
+Mean Value (Legal Moves Only),,,,,0.184,
