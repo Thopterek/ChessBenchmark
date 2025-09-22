@@ -1,0 +1,108 @@
+Model,Call#,Move,Legal,UCI,Eval,Normalized
+google/gemini-2.5-flash-lite,1,Qh5,True,d5h5,-665 cp,0.167
+google/gemini-2.5-flash-lite,2,Qh5,True,d5h5,-679 cp,0.16
+google/gemini-2.5-flash-lite,3,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,4,Qd3,True,d5d3,53 cp,0.526
+google/gemini-2.5-flash-lite,5,Qh5,True,d5h5,-670 cp,0.165
+google/gemini-2.5-flash-lite,6,Qh5,True,d5h5,-672 cp,0.164
+google/gemini-2.5-flash-lite,7,Qh5,True,d5h5,-681 cp,0.159
+google/gemini-2.5-flash-lite,8,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,9,Qd3,True,d5d3,53 cp,0.526
+google/gemini-2.5-flash-lite,10,Qh5,True,d5h5,-675 cp,0.162
+google/gemini-2.5-flash-lite,11,Qh5,True,d5h5,-680 cp,0.16
+google/gemini-2.5-flash-lite,12,Qh5,True,d5h5,-671 cp,0.164
+google/gemini-2.5-flash-lite,13,Qh5,True,d5h5,-671 cp,0.164
+google/gemini-2.5-flash-lite,14,Qh5,True,d5h5,-681 cp,0.159
+google/gemini-2.5-flash-lite,15,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,16,Qe1,False,,,0.0
+google/gemini-2.5-flash-lite,17,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,18,Qh5,True,d5h5,-668 cp,0.166
+google/gemini-2.5-flash-lite,19,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,20,Qh5,True,d5h5,-673 cp,0.163
+google/gemini-2.5-flash-lite,21,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,22,Qd3,True,d5d3,56 cp,0.528
+google/gemini-2.5-flash-lite,23,Qf5,True,d5f5,381 cp,0.691
+google/gemini-2.5-flash-lite,24,Qh5,True,d5h5,-685 cp,0.157
+google/gemini-2.5-flash-lite,25,Qh5,True,d5h5,-674 cp,0.163
+google/gemini-2.5-flash-lite,26,Qh5,True,d5h5,-679 cp,0.16
+google/gemini-2.5-flash-lite,27,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,28,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,29,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,30,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,31,Qd3,True,d5d3,47 cp,0.523
+google/gemini-2.5-flash-lite,32,Qh5,True,d5h5,-674 cp,0.163
+google/gemini-2.5-flash-lite,33,Qd3,True,d5d3,45 cp,0.522
+google/gemini-2.5-flash-lite,34,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,35,Qh5,True,d5h5,-664 cp,0.168
+google/gemini-2.5-flash-lite,36,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,37,Qh5,True,d5h5,-676 cp,0.162
+google/gemini-2.5-flash-lite,38,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,39,Qh5,True,d5h5,-690 cp,0.155
+google/gemini-2.5-flash-lite,40,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,41,Qh5,True,d5h5,-680 cp,0.16
+google/gemini-2.5-flash-lite,42,Qh5,True,d5h5,-662 cp,0.169
+google/gemini-2.5-flash-lite,43,Qh5,True,d5h5,-657 cp,0.171
+google/gemini-2.5-flash-lite,44,Qh5,True,d5h5,-670 cp,0.165
+google/gemini-2.5-flash-lite,45,Qh5,True,d5h5,-678 cp,0.161
+google/gemini-2.5-flash-lite,46,Qh5,True,d5h5,-681 cp,0.159
+google/gemini-2.5-flash-lite,47,Qh5,True,d5h5,-672 cp,0.164
+google/gemini-2.5-flash-lite,48,Qh5,True,d5h5,-679 cp,0.16
+google/gemini-2.5-flash-lite,49,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,50,Qd7,True,d5d7,-550 cp,0.225
+google/gemini-2.5-flash-lite,51,Qh5,True,d5h5,-678 cp,0.161
+google/gemini-2.5-flash-lite,52,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,53,Qh5,True,d5h5,-672 cp,0.164
+google/gemini-2.5-flash-lite,54,Qh5,True,d5h5,-665 cp,0.167
+google/gemini-2.5-flash-lite,55,Qh5,True,d5h5,-674 cp,0.163
+google/gemini-2.5-flash-lite,56,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,57,Qd7,True,d5d7,-580 cp,0.21
+google/gemini-2.5-flash-lite,58,Qf5,True,d5f5,375 cp,0.688
+google/gemini-2.5-flash-lite,59,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,60,Qh5,True,d5h5,-671 cp,0.164
+google/gemini-2.5-flash-lite,61,Qh5,True,d5h5,-679 cp,0.16
+google/gemini-2.5-flash-lite,62,Qh5,True,d5h5,-676 cp,0.162
+google/gemini-2.5-flash-lite,63,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,64,Qd3,True,d5d3,42 cp,0.521
+google/gemini-2.5-flash-lite,65,Qh5,True,d5h5,-663 cp,0.168
+google/gemini-2.5-flash-lite,66,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,67,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,68,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,69,Qe1,False,,,0.0
+google/gemini-2.5-flash-lite,70,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,71,Qh5,True,d5h5,-669 cp,0.165
+google/gemini-2.5-flash-lite,72,Qh5,True,d5h5,-674 cp,0.163
+google/gemini-2.5-flash-lite,73,Qh5,True,d5h5,-683 cp,0.158
+google/gemini-2.5-flash-lite,74,Qh5,True,d5h5,-678 cp,0.161
+google/gemini-2.5-flash-lite,75,Qh5,True,d5h5,-672 cp,0.164
+google/gemini-2.5-flash-lite,76,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,77,Qf5,True,d5f5,364 cp,0.682
+google/gemini-2.5-flash-lite,78,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,79,Qh5,True,d5h5,-676 cp,0.162
+google/gemini-2.5-flash-lite,80,Qd3,True,d5d3,48 cp,0.524
+google/gemini-2.5-flash-lite,81,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,82,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,83,Qh5,True,d5h5,-675 cp,0.162
+google/gemini-2.5-flash-lite,84,Qh5,True,d5h5,-679 cp,0.16
+google/gemini-2.5-flash-lite,85,Qd3,True,d5d3,46 cp,0.523
+google/gemini-2.5-flash-lite,86,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,87,Qh5,True,d5h5,-675 cp,0.162
+google/gemini-2.5-flash-lite,88,Qh5,True,d5h5,-675 cp,0.162
+google/gemini-2.5-flash-lite,89,Qd3,True,d5d3,52 cp,0.526
+google/gemini-2.5-flash-lite,90,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,91,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,92,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,93,Qd3,True,d5d3,51 cp,0.525
+google/gemini-2.5-flash-lite,94,Qh5,True,d5h5,-672 cp,0.164
+google/gemini-2.5-flash-lite,95,Qh5,True,d5h5,-682 cp,0.159
+google/gemini-2.5-flash-lite,96,Qd7,True,d5d7,-573 cp,0.214
+google/gemini-2.5-flash-lite,97,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,98,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,99,Qd5,False,,,0.0
+google/gemini-2.5-flash-lite,100,Qd3,True,d5d3,61 cp,0.53
+,,,,,,
+=== Summary Statistics ===,,,,,,
+Average Normalized Value,,,,,0.161,
+Standard Deviation,,,,,0.18,
+Mean Absolute Error (from 0.5),,,,,0.355,
+Illegal Moves (%),,,,,36.00%,
+Mean Value (Legal Moves Only),,,,,0.252,
