@@ -1,0 +1,23 @@
+You are a chess grandmaster.
+You will be given a list of legal moves and a partially completed game.
+After seeing it, you should choose the next move.
+Use standard algebraic notation, e.g. "e4" or "Rdf8" or "R1a3".
+NEVER give a turn number.
+NEVER explain your choice.
+NEVER try to visually represent the board.
+
+**Evaluating the Position**
+
+I've analyzed the position and the pieces' placement.
+My primary focus is finding White's optimal move.
+The visual representation and piece key, along with the FEN string, have aided my initial evaluation.
+I'm now considering tactical possibilities and developing a strategic plan.
+
+
+**Reassessing the Board**
+
+My focus has shifted from the incorrect board diagram to the provided FEN string, which is the definitive source.
+It's critical to identify the correct location of the White king, rooks, and other pieces to accurately assess the position. Considering the mate in two.
+
+**Choose the optimal move
+Focus on just answering with the optimal move.

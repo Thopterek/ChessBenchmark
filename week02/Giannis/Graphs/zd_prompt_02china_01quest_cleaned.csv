@@ -1,0 +1,93 @@
+# Chess Move Prediction Results with Legality & Stockfish Eval
+ Model , Call # , Move , Legal , UCI , Eval 
+-------,--------,------,-------,-----,------
+ google/gemini-2.5-flash-lite , 1 , Qg7 , False , None , None 
+ google/gemini-2.5-flash-lite , 2 , Nhf7 , True , h6f7 , 616 cp 
+ google/gemini-2.5-flash-lite , 3 , Qg6 , False , None , None 
+ google/gemini-2.5-flash-lite , 4 , Qh6 , False , None , None 
+ google/gemini-2.5-flash-lite , 5 , Qh6 , False , None , None 
+ google/gemini-2.5-flash-lite , 6 , Qf7 , True , d5f7 , 0 cp 
+ google/gemini-2.5-flash-lite , 7 , Qf7 , True , d5f7 , -25 cp 
+ google/gemini-2.5-flash-lite , 8 , Rh6 , False , None , None 
+ google/gemini-2.5-flash-lite , 9 , Qh7 , False , None , None 
+ google/gemini-2.5-flash-lite , 10 , Rxh7 , False , None , None 
+ openai/gpt-4.1-mini , 1 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 2 , Qh5 , True , d5h5 , -630 cp 
+ openai/gpt-4.1-mini , 3 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 4 , Qxd8 , False , None , None 
+ openai/gpt-4.1-mini , 5 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 6 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 7 , Qxf7 , True , d5f7 , 8 cp 
+ openai/gpt-4.1-mini , 8 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 9 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-4.1-mini , 10 , Qg8 , True , d5g8 , Mate in 1 
+ openai/gpt-3.5-turbo-instruct , 1 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 2 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 3 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 4 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 5 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 6 , Qe3 , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 7 , Qe3 , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 8 , SE , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 9 , 您的着法是：Nxf7 , False , None , None 
+ openai/gpt-3.5-turbo-instruct , 10 , SE , False , None , None 
+ deepseek/deepseek-chat-v3.1 , 1 , Rf8 , False , None , None 
+ deepseek/deepseek-chat-v3.1 , 2 , Qc5 , True , d5c5 , -90 cp 
+ deepseek/deepseek-chat-v3.1 , 3 , Qc6 , True , d5c6 , -116 cp 
+ deepseek/deepseek-chat-v3.1 , 4 , Qd8 , False , None , None 
+ deepseek/deepseek-chat-v3.1 , 5 , Qd8 , False , None , None 
+ deepseek/deepseek-chat-v3.1 , 6 , Qxg5 , True , d5g5 , 386 cp 
+ deepseek/deepseek-chat-v3.1 , 7 , Qxd7 , True , d5d7 , -550 cp 
+ deepseek/deepseek-chat-v3.1 , 8 , Qh5 , True , d5h5 , -627 cp 
+ deepseek/deepseek-chat-v3.1 , 9 ,  , False , None , None 
+ deepseek/deepseek-chat-v3.1 , 10 , Qxg8 , True , d5g8 , Mate in 1 
+ meta-llama/llama-3.3-8b-instruct:free , 1 , Qxd4 , True , d5d4 , 397 cp 
+ meta-llama/llama-3.3-8b-instruct:free , 2 , Qa5 , True , d5a5 , -47 cp 
+ meta-llama/llama-3.3-8b-instruct:free , 3 , Qd3 , True , d5d3 , 49 cp 
+ meta-llama/llama-3.3-8b-instruct:free , 4 , Qd3 , True , d5d3 , 59 cp 
+ meta-llama/llama-3.3-8b-instruct:free , 5 , Qd4 , True , d5d4 , 437 cp 
+ meta-llama/llama-3.3-8b-instruct:free , 6 , SE , False , None , None 
+ meta-llama/llama-3.3-8b-instruct:free , 7 , Qg4 , False , None , None 
+ meta-llama/llama-3.3-8b-instruct:free , 8 , SE , False , None , None 
+ meta-llama/llama-3.3-8b-instruct:free , 9 , Qg4 , False , None , None 
+ meta-llama/llama-3.3-8b-instruct:free , 10 , Qh3 , False , None , None 
+ qwen/qwen3-coder , 1 , Qe6 , True , d5e6 , -662 cp 
+ qwen/qwen3-coder , 2 , Qe6 , True , d5e6 , -650 cp 
+ qwen/qwen3-coder , 3 , Qe6 , True , d5e6 , -646 cp 
+ qwen/qwen3-coder , 4 , Qe3 , False , None , None 
+ qwen/qwen3-coder , 5 , Qe5 , True , d5e5 , 231 cp 
+ qwen/qwen3-coder , 6 , Qe3 , False , None , None 
+ qwen/qwen3-coder , 7 , Qg7 , False , None , None 
+ qwen/qwen3-coder , 8 , Qe5 , True , d5e5 , 283 cp 
+ qwen/qwen3-coder , 9 , Qe6 , True , d5e6 , -655 cp 
+ qwen/qwen3-coder , 10 , Qe6 , True , d5e6 , -660 cp 
+ meituan/longcat-flash-chat , 1 , Qd5 , False , None , None 
+ meituan/longcat-flash-chat , 2 , Qf5 , True , d5f5 , 374 cp 
+ meituan/longcat-flash-chat , 3 , Qd5 , False , None , None 
+ meituan/longcat-flash-chat , 4 , Qd5 , False , None , None 
+ meituan/longcat-flash-chat , 5 , Qd5 , False , None , None 
+ meituan/longcat-flash-chat , 6 , Qe3 , False , None , None 
+ meituan/longcat-flash-chat , 7 , Qd5 , False , None , None 
+ meituan/longcat-flash-chat , 8 , Qd8 , False , None , None 
+ meituan/longcat-flash-chat , 9 , Qh5 , True , d5h5 , -637 cp 
+ meituan/longcat-flash-chat , 10 , Qd5 , False , None , None 
+ mistralai/mistral-medium-3.1 , 1 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 2 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 3 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 4 , Qh5 , True , d5h5 , -617 cp 
+ mistralai/mistral-medium-3.1 , 5 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 6 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 7 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 8 ,  , False , None , None 
+ mistralai/mistral-medium-3.1 , 9 , Qg8 , True , d5g8 , Mate in 1 
+ mistralai/mistral-medium-3.1 , 10 ,  , False , None , None 
+ baidu/ernie-4.5-vl-28b-a3b , 1 , Qd4 , True , d5d4 , 412 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 2 , Qd4 , True , d5d4 , 448 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 3 , Qd4 , True , d5d4 , 454 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 4 , Qd4 , True , d5d4 , 434 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 5 , Qd4 , True , d5d4 , 421 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 6 , Qd4 , True , d5d4 , 445 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 7 , Qd4 , True , d5d4 , 460 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 8 , Qd5 , False , None , None 
+ baidu/ernie-4.5-vl-28b-a3b , 9 , Qd4 , True , d5d4 , 458 cp 
+ baidu/ernie-4.5-vl-28b-a3b , 10 , Qd4 , True , d5d4 , 458 cp 

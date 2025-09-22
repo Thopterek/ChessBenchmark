@@ -218,22 +218,22 @@ if __name__ == "__main__":
         "google/gemini-2.5-flash-lite"
     ]
     temper = [
-    #    0.0,
-    #    0.1,
-    #    0.2,
-       0.3
-    #    0.4,
-    #    0.5,
-    #    0.6,
-    #    0.7,
-    #    0.8,
-    #    0.9,
-    #    1
+       0.0,
+       0.1,
+       0.2,
+       0.3,
+       0.4,
+       0.5,
+       0.6,
+       0.7,
+       0.8,
+       0.9,
+       1
    ] 
     system_prompt_file = "../system_prompts/MdLike.txt"
     query_prompt_file = "../prompts/week01Best.txt"
     
-    num_calls = 200
+    num_calls = 100
     fen_str = "3qr2k/pbpp2pp/1p5N/3Q4/2P1P1b1/P7/1PP2PPP/R3RK2 w - - 0 1"
 
     temp_values = []
