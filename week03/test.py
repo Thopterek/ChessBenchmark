@@ -15,7 +15,7 @@ OP_TOKEN = os.environ.get("OP_TOKEN")
 STOCKFISH_PATH = "/Users/salvador.dali.disciple/homebrew/bin/stockfish"
 engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH_PATH)
 
-
+# REPLACED TEMP WITH 0.5 AS PER THE bench_results
 # ---- MODEL CALL FUNCTION ----
 def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: float):
     try:
@@ -38,8 +38,9 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: flo
                     {"role": "user", "content": query_prompt}
                 ],
                 "max_tokens": 1000,
-                "temperature": temp,
-                "include_reasoning": False
+                "temperature": 0.5,
+                "include_reasoning": False,
+                "top_p": temp
             }
         )
         
@@ -169,7 +170,7 @@ def parse_and_evaluate(move_str: str, board: chess.Board):
 
 # ---- SAVE RESULTS ----
 def save_results_csv(results, system_prompt_path, model, tmp):
-    results_dir = "tst_weird_puzzle_gpt"
+    results_dir = "bench_top_p"
     os.makedirs(results_dir, exist_ok=True)
 
     system_name = os.path.splitext(os.path.basename(system_prompt_path))[0]
@@ -235,16 +236,16 @@ class Color:
 
 if __name__ == "__main__":
     models = [
-        # "qwen/qwen-2.5-vl-7b-instruct",
+        "qwen/qwen-2.5-vl-7b-instruct",
         "openai/gpt-4.1-nano",
-        # "amazon/nova-lite-v1",
-        # "arcee-ai/afm-4.5b",
-        # "baidu/ernie-4.5-21b-a3b",
-        # "z-ai/glm-4-32b",
-        # "bytedance/ui-tars-1.5-7b",
-        # "google/gemini-2.5-flash-lite",
-        # "mistralai/devstral-small",
-        # "microsoft/phi-4-reasoning-plus",
+        "amazon/nova-lite-v1",
+        "arcee-ai/afm-4.5b",
+        "baidu/ernie-4.5-21b-a3b",
+        "z-ai/glm-4-32b",
+        "bytedance/ui-tars-1.5-7b",
+        "google/gemini-2.5-flash-lite",
+        "mistralai/devstral-small",
+        "microsoft/phi-4-reasoning-plus",
     ]
     temper = [round(x * 0.1, 1) for x in range(11)]
     system_prompt_file = "./system_prompts/base.txt"
@@ -255,12 +256,12 @@ if __name__ == "__main__":
 
     for tmp in temper:
         # pick ONE FEN for this temperature
-        # idx = random.randint(0, len(fens)-1)
-        # fen = fens[idx]
-        # if len(fen.split()) == 4:
-        #     fen = fen + " w - - 0 1"
-        fen = "8/5pQB/6n1/6k1/6P1/6K1/8/8"
-        fen = fen + " w - - 0 1"
+        idx = random.randint(0, len(fens)-1)
+        fen = fens[idx]
+        if len(fen.split()) == 4:
+            fen = fen + " w - - 0 1"
+        # fen = "8/5pQB/6n1/6k1/6P1/6K1/8/8"
+        # fen = fen + " w - - 0 1"
 
         print(f"\n=== Temperature {Color.RED}{tmp}{Color.END} | Using FEN #{fen} ===")
         print(fen)
@@ -288,4 +289,3 @@ if __name__ == "__main__":
             save_results_csv(results, system_prompt_file, model, tmp)
 
     engine.quit()
-
