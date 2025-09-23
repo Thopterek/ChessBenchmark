@@ -1,0 +1,108 @@
+Call#,Move,Legal,UCI,Eval,Normalized,FEN
+1,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+2,Rxa6,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+3,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+4,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+5,Rc7,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+6,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+7,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+8,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+9,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+10,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+11,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+12,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+13,Re1,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+14,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+15,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+16,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+17,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+18,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+19,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+20,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+21,Bf5,True,d7f5,Mate in 9,0.901,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+22,Kf5,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+23,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+24,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+25,Kc2,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+26,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+27,Kf2,True,f3f2,Mate in 7,0.901,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+28,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+29,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+30,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+31,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+32,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+33,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+34,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+35,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+36,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+37,Bc8,True,d7c8,Mate in 9,0.901,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+38,SE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+39,Kc2,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+40,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+41,Bf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+42,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+43,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+44,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+45,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+46,Rf5,True,h5f5,Mate in 7,0.901,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+47,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+48,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+49,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+50,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+51,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+52,Kc3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+53,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+54,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+55,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+56,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+57,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+58,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+59,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+60,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+61,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+62,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+63,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+64,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+65,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+66,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+67,Kd5,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+68,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+69,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+70,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+71,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+72,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+73,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+74,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+75,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+76,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+77,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+78,SE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+79,Kd4,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+80,Kd2,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+81,Rd8,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+82,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+83,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+84,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+85,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+86,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+87,Rxf7,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+88,,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+89,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+90,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+91,Rf7,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+92,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+93,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+94,Kf2,True,f3f2,Mate in 7,0.901,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+95,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+96,Kf3,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+97,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+98,Kf6,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+99,NONE,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+100,Rf7,False,,,0.0,8/3Bp3/8/1p5R/k7/5K2/8/4B3
+,,,,,,
+,=== Summary Statistics ===,,,,,
+,Average Normalized Value,,,0.045,,
+,Standard Deviation,,,0.196,,
+,Mean Absolute Error (from 0.5),,,0.495,,
+,Illegal Moves (%),,,95.00%,,
+,Mean Value (Legal Moves Only),,,0.901,,
