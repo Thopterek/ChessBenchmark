@@ -15,15 +15,45 @@ OP_TOKEN = os.environ.get("OP_TOKEN")
 STOCKFISH_PATH = "/Users/salvador.dali.disciple/homebrew/bin/stockfish"
 engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH_PATH)
 
-# REPLACED TEMP WITH 0.5 AS PER THE bench_results
+def build_system_prompt(max_tokens: int) -> str:
+    # Proportional distribution
+    input_budget = int(max_tokens * 0.2)
+    reasoning_budget = int(max_tokens * 0.6)
+    output_budget = max_tokens - input_budget - reasoning_budget
+
+    return f"""You are a world-class chess grandmaster.
+
+- You will be given:
+  1. The current board position in FEN notation.
+  2. A list of legal moves in Standard Algebraic Notation (SAN).
+  3. A partially completed game history (moves played so far).
+
+- Your task:
+  - Choose the single best next move for the player to move.
+  - Output **only the move** in SAN (e.g., Nf3, Qxd7, O-O).
+  - NEVER output explanations, commentary, or reasoning.
+  - ALWAYS ensure the move is legal and in the provided list of legal moves.
+
+- Constraints:
+  - Output exactly one move per query.
+  - Do not include punctuation, quotes, or extra text.
+  - If no moves are legal (checkmate/stalemate), respond with "NONE".
+
+- Max tokens {max_tokens}:
+    - {input_budget} for input
+    - {reasoning_budget} for reasoning
+    - {output_budget} for output
+""".strip()
+
 # ---- MODEL CALL FUNCTION ----
 def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: float):
-    try:
-        with open(system_prompt, 'r', encoding='utf-8') as file:
-            sys_prompt = file.read().strip()
-    except FileNotFoundError:
-        return "Error: System prompt file not found"
-    
+    # try:
+    #     with open(system_prompt, 'r', encoding='utf-8') as file:
+    #         sys_prompt = file.read().strip()
+    # except FileNotFoundError:
+    #     return "Error: System prompt file not found"
+    prompt = build_system_prompt(temp)
+ 
     try:
         response = requests.post(
             "https://openrouter.ai/api/v1/chat/completions",
@@ -34,27 +64,24 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: flo
             json={
                 "model": model_name,
                 "messages": [
-                    {"role": "system", "content": sys_prompt},
+                    {"role": "system", "content": prompt},
                     {"role": "user", "content": query_prompt}
                 ],
-                "max_tokens": temp,
+                "max_tokens": prompt,
                 "temperature": 0.5,
                 "include_reasoning": False,
-                # "top_p": temp
+                "top_p": 0.3
             }
         )
-        
         if response.status_code == 200:
             result = response.json()
             return result['choices'][0]['message']['content'].strip()
         else:
             return f"Error: {response.status_code} - {response.text}"
-            
     except Exception as e:
         return f"Error: {str(e)}"
 
-
-# ---- NORMALIZATION ----
+# ---- NORMALIZATION ---
 def normalize_stockfish_0_1(eval_str, max_cp=1000, invalid_val=0.0):
     """
     Normalize Stockfish eval string to [0.0, 1.0].
@@ -62,6 +89,9 @@ def normalize_stockfish_0_1(eval_str, max_cp=1000, invalid_val=0.0):
     - losing mate (Mate in -N) → 0.1
     - centipawn scores: scaled into [0.1, 0.9]
     - winning mate (Mate in +N): scaled into (0.9, 1.0]
+      * Mate in 0 -> 1.0
+      * Mate in 1 -> 0.99
+      * Mate in 2 -> 0.98, etc.
     """
     if not eval_str:
         return invalid_val  # invalid / missing
@@ -73,7 +103,10 @@ def normalize_stockfish_0_1(eval_str, max_cp=1000, invalid_val=0.0):
     if mate_match:
         mate_in = int(mate_match.group(1))
         if mate_in > 0:  # winning mate
-            return min(1.0, 0.9 + 0.01 * (1.0 / mate_in))
+            if mate_in == 0:
+                return 1.0
+            else:
+                return max(0.91, 1.0 - 0.01 * mate_in)
         else:            # losing mate
             return 0.1
 
@@ -87,7 +120,6 @@ def normalize_stockfish_0_1(eval_str, max_cp=1000, invalid_val=0.0):
 
     # If unknown eval
     return invalid_val
-
 
 # ---- FEN UTILITIES ----
 def load_fens(fen_file="391k-valid.fen"):
@@ -245,7 +277,7 @@ if __name__ == "__main__":
         "bytedance/ui-tars-1.5-7b",
         "google/gemini-2.5-flash-lite",
         "mistralai/devstral-small",
-        "microsoft/phi-4-reasoning-plus",
+        # "microsoft/phi-4-reasoning-plus",
     ]
     # temper = [round(x * 0.1, 1) for x in range(11)]
     temper = [
