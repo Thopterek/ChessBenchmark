@@ -9,14 +9,13 @@ import csv
 import statistics
 import random
 
+# ---- CONFIG ----
 OP_TOKEN = os.environ.get("OP_TOKEN")
-
-# ---- STOCKFISH SETUP ----
 STOCKFISH_PATH = "/Users/salvador.dali.disciple/homebrew/bin/stockfish"
 engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH_PATH)
 
+# ---- SYSTEM PROMPT ----
 def build_system_prompt(max_tokens: int) -> str:
-    # Proportional distribution
     input_budget = int(max_tokens * 0.2)
     reasoning_budget = int(max_tokens * 0.6)
     output_budget = max_tokens - input_budget - reasoning_budget
@@ -42,21 +41,16 @@ def build_system_prompt(max_tokens: int) -> str:
     - {output_budget} for output
 """.strip()
 
+# ---- LOAD PUZZLES ----
 def load_pickpocket(file_path="pickpocket.txt"):
     puzzles = []
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
-
-    # Split into puzzle blocks by "Puzzle ID"
     blocks = content.split("Puzzle ID :")
     for block in blocks[1:]:
         lines = block.strip().splitlines()
         puzzle = {}
-
-        # Puzzle ID
         puzzle["id"] = lines[0].strip()
-
-        # Rating (next line or search)
         for l in lines:
             if l.startswith("Rating"):
                 puzzle["rating"] = l.split(":")[-1].strip()
@@ -72,7 +66,6 @@ def load_pickpocket(file_path="pickpocket.txt"):
                 puzzle["answer_uci"] = l.split(":", 1)[-1].strip()
         puzzles.append(puzzle)
     return puzzles
-
 
 def build_prompt_from_puzzle(puzzle):
     return f"""
@@ -91,16 +84,10 @@ def build_prompt_from_puzzle(puzzle):
 </question>
 """.strip()
 
-
-# ---- MODEL CALL FUNCTION ----
-def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: float):
-    # try:
-    #     with open(system_prompt, 'r', encoding='utf-8') as file:
-    #         sys_prompt = file.read().strip()
-    # except FileNotFoundError:
-    #     return "Error: System prompt file not found"
-    prompt = build_system_prompt(1000)
- 
+# ---- MODEL CALL ----
+def call_model(system_prompt: str, model_name: str, query_prompt: str,
+               temp: float, top_p: float, max_tokens: int):
+    prompt = build_system_prompt(max_tokens)
     try:
         response = requests.post(
             "https://openrouter.ai/api/v1/chat/completions",
@@ -114,10 +101,10 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: flo
                     {"role": "system", "content": prompt},
                     {"role": "user", "content": query_prompt}
                 ],
-                "max_tokens": 1000,
+                "max_tokens": max_tokens,
                 "temperature": temp,
+                "top_p": top_p,
                 "include_reasoning": False,
-                # "top_p": temp
             }
         )
         if response.status_code == 200:
@@ -128,88 +115,28 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: flo
     except Exception as e:
         return f"Error: {str(e)}"
 
-# ---- NORMALIZATION ---
+# ---- EVALUATION ----
 def normalize_stockfish_0_1(eval_str, max_cp=1000, invalid_val=0.0):
-    """
-    Normalize Stockfish eval string to [0.0, 1.0].
-    - invalid (syntax error / no move) → 0.0
-    - losing mate (Mate in -N) → 0.1
-    - centipawn scores: scaled into [0.1, 0.9]
-    - winning mate (Mate in +N): scaled into (0.9, 1.0]
-      * Mate in 0 -> 1.0
-      * Mate in 1 -> 0.99
-      * Mate in 2 -> 0.98, etc.
-    """
     if not eval_str:
-        return invalid_val  # invalid / missing
-
+        return invalid_val
     eval_str = eval_str.strip()
-
-    # Mate
     mate_match = re.match(r"Mate in (-?\d+)", eval_str)
     if mate_match:
         mate_in = int(mate_match.group(1))
-        if mate_in > 0:  # winning mate
+        if mate_in >= 0:
             if mate_in == 0:
                 return 1.0
             else:
                 return max(0.91, 1.0 - 0.01 * mate_in)
-        else:            # losing mate
+        else:
             return 0.1
-
-    # Centipawns
     cp_match = re.match(r"(-?\d+)\s*cp", eval_str)
     if cp_match:
         cp = int(cp_match.group(1))
-        cp = max(-max_cp, min(cp, max_cp))  # clamp
-        # map -max_cp → 0.1, 0 → 0.5, +max_cp → 0.9
+        cp = max(-max_cp, min(cp, max_cp))
         return 0.5 + (cp / (2 * max_cp)) * 0.8
-
-    # If unknown eval
     return invalid_val
 
-# ---- FEN UTILITIES ----
-def load_fens(fen_file="391k-valid.fen"):
-    with open(fen_file, "r") as f:
-        fens = [line.strip() for line in f if line.strip()]
-    return fens
-
-def fen_to_ascii_board(fen):
-    board = chess.Board(fen)
-    output = []
-    for rank in range(8, 0, -1):
-        row = []
-        for file in range(8):
-            square = chess.square(file, rank-1)
-            piece = board.piece_at(square)
-            row.append(piece.symbol() if piece else ".")
-        output.append(f"{rank}  " + "  ".join(row))
-    output.append("   " + "  ".join("abcdefgh"))
-    return "\n".join(output)
-
-def build_prompt_from_fen(fen):
-    ascii_board = fen_to_ascii_board(fen)
-    return f"""
-<question>Based on the board provided below:
-Find the best possible move for the white player.
-
-<FEN>
-{fen}
-</FEN>
-
-<BOARD>
-{ascii_board}
-</BOARD>
-
-<answer>
-Formulate the answer as just one move.
-Use algebraic notation.
-</answer>
-</question>
-""".strip()
-
-
-# ---- CLEAN + PARSE ----
 def clean_move_str(move_str: str) -> str:
     move_str = move_str.strip()
     move_str = re.sub(r'<[^>]+>', '', move_str)
@@ -223,7 +150,6 @@ def clean_move_str(move_str: str) -> str:
 def parse_and_evaluate(move_str: str, board: chess.Board):
     move_str = clean_move_str(move_str)
     result = {"move": move_str, "uci": None, "legal": False, "eval": None, "fen": board.fen()}
-
     try:
         move = board.parse_san(move_str)
         board.push(move)
@@ -233,35 +159,34 @@ def parse_and_evaluate(move_str: str, board: chess.Board):
     except Exception:
         result["legal"] = False
         return result
-
-    # Stockfish evaluation
     info = engine.analyse(board, chess.engine.Limit(depth=15))
     score = info["score"]
-
     if score.is_mate():
         result["eval"] = f"Mate in {score.white().mate()}"
     else:
         cp = score.white().score(mate_score=100000)
         result["eval"] = f"{cp} cp"
-
     return result
 
-
 # ---- SAVE RESULTS ----
-def save_results_csv(results, system_prompt_path, model, tmp):
+def save_results_csv(results, system_prompt_path, model, tmp, top_p, max_tokens, puzzle_id):
     results_dir = "gpt-temp-check"
     os.makedirs(results_dir, exist_ok=True)
-
     system_name = os.path.splitext(os.path.basename(system_prompt_path))[0]
-    filename = os.path.join(results_dir, f"res_{system_name}_{model.replace('/', '-')}_T{tmp}.csv")
+    filename = os.path.join(
+        results_dir,
+        f"res_{system_name}_{model.replace('/', '-')}_T{tmp}_P{top_p}_M{max_tokens}_Puzzle{puzzle_id}.csv"
+    )
 
     norm_values = []
     legal_norms = []
     illegal_count = 0
     total_count = 0
+    legal_moves_seen = []
 
     with open(filename, mode='w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ["Call#", "Move", "Legal", "UCI", "Eval", "Normalized", "FEN"]
+        fieldnames = ["Call#", "PuzzleID", "Move", "Legal", "UCI", "Eval",
+                      "Normalized", "FEN", "Temperature", "Top_p", "Max_tokens"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         
@@ -269,43 +194,59 @@ def save_results_csv(results, system_prompt_path, model, tmp):
             move_val = res['move']
             if len(move_val) > 10:
                 move_val = "SE"
-            
             norm_val = normalize_stockfish_0_1(res.get('eval', ''))
-            
             writer.writerow({
                 "Call#": idx,
+                "PuzzleID": puzzle_id,
                 "Move": move_val,
                 "Legal": res['legal'],
                 "UCI": res.get('uci', ''),
                 "Eval": res.get('eval', ''),
                 "Normalized": round(norm_val, 3),
-                "FEN": res.get("fen", "")
+                "FEN": res.get("fen", ""),
+                "Temperature": tmp,
+                "Top_p": top_p,
+                "Max_tokens": max_tokens
             })
-            
             norm_values.append(norm_val)
             total_count += 1
             if res['legal']:
                 legal_norms.append(norm_val)
+                legal_moves_seen.append(move_val)
             else:
                 illegal_count += 1
 
-        # Stats
         mean_val = statistics.mean(norm_values) if norm_values else 0.0
         std_val = statistics.pstdev(norm_values) if len(norm_values) > 1 else 0.0
         mae_val = statistics.mean(abs(v - 0.5) for v in norm_values) if norm_values else 0.0
         illegal_pct = (illegal_count / total_count * 100) if total_count > 0 else 0.0
         legal_mean = statistics.mean(legal_norms) if legal_norms else 0.0
 
+        move_freq = {}
+        for mv in legal_moves_seen:
+            move_freq[mv] = move_freq.get(mv, 0) + 1
+        most_freq_move, most_freq_count = (None, 0)
+        if move_freq:
+            most_freq_move, most_freq_count = max(move_freq.items(), key=lambda x: x[1])
+            most_freq_pct = most_freq_count / total_count * 100
+        else:
+            most_freq_pct = 0.0
+
         writer.writerow({})
         writer.writerow({"Move": "=== Summary Statistics ==="})
+        writer.writerow({"Move": "Puzzle ID", "Eval": puzzle_id})
         writer.writerow({"Move": "Average Normalized Value", "Eval": round(mean_val, 3)})
         writer.writerow({"Move": "Standard Deviation", "Eval": round(std_val, 3)})
         writer.writerow({"Move": "Mean Absolute Error (from 0.5)", "Eval": round(mae_val, 3)})
         writer.writerow({"Move": "Illegal Moves (%)", "Eval": f"{illegal_pct:.2f}%"})
         writer.writerow({"Move": "Mean Value (Legal Moves Only)", "Eval": round(legal_mean, 3)})
+        writer.writerow({"Move": "Unique Legal Moves", "Eval": len(move_freq)})
+        writer.writerow({"Move": "Most Frequent Move", "Eval": f"{most_freq_move} ({most_freq_pct:.1f}%)"})
+        writer.writerow({"Move": "Temperature", "Eval": tmp})
+        writer.writerow({"Move": "Top_p", "Eval": top_p})
+        writer.writerow({"Move": "Max_tokens", "Eval": max_tokens})
 
     print(f"\n✅ Results saved to {filename}")
-
 
 # ---- MAIN ----
 class Color:
@@ -315,69 +256,34 @@ class Color:
 
 if __name__ == "__main__":
     models = [
-        # "qwen/qwen-2.5-vl-7b-instruct",
-        # "openai/gpt-4.1-nano",
-        # "amazon/nova-lite-v1",
-        # "arcee-ai/afm-4.5b",
-        # "baidu/ernie-4.5-21b-a3b",
-        # "z-ai/glm-4-32b",
-        # "bytedance/ui-tars-1.5-7b",
-        # "google/gemini-2.5-flash-lite",
-        # "mistralai/devstral-small",
-        # "microsoft/phi-4-reasoning-plus",
         "openai/gpt-4.1-mini",
-        "openai/gpt-5-mini"
+        "deepseek/deepseek-chat-v3.1"
     ]
-    temper = [round(x * 0.1, 1) for x in range(11)]
-    # temper = [
-    #     25,
-    #     50,
-    #     100,
-    #     200,
-    #     400,
-    #     800,
-    #     1600,
-    #     3200,
-    #     6400,
-    #     12800
-    # ]
+    temper = [0.7]
+    top_ps = [0.3]
+    max_tokens = 1000
     system_prompt_file = "./system_prompts/base.txt"
-    fen_file = "391k-valid.fen"
-    
-    num_calls = 10
-    fens = load_fens(fen_file)
-    for tmp in temper:
-        # pick ONE FEN for this temperature
-        # idx = random.randint(0, len(fens)-1)
-        # fen = fens[idx]
-        # if len(fen.split()) == 4:
-        #     fen = fen + " w - - 0 1"
-        # fen = "8/5pQB/6n1/6k1/6P1/6K1/8/8"
-        # fen = fen + " w - - 0 1"
+    puzzles = load_pickpocket("pickpocket.txt")
+    num_calls = 1  # run 100 calls per puzzle/temp for stats
 
-        print(f"\n=== Max tokens {Color.RED}{tmp}{Color.END} | Using FEN #{fen} ===")
-        print(fen)
-
-        # build prompt once
-        #query_prompt = build_prompt_from_fen(fen)
-
-        for model in models:
-            results = []
-            print(f"\nTesting {Color.RED}{model}{Color.END} at max tokens {Color.RED}{tmp}{Color.END}")
-
-            for call_num in range(num_calls):
-                board = chess.Board(fen)
-                response = call_model(system_prompt_file, model, query_prompt, tmp)
-
-                move_response = response.split("\n")[0].strip()
-                move_result = parse_and_evaluate(move_response, board)
-                move_result["fen"] = fen
-                results.append(move_result)
-                
-                print(f"  Call {call_num+1}: Move={move_result['move']} | Legal={move_result['legal']} | Eval={move_result['eval']}")
-                time.sleep(1)
-            
-            # Save per-model + per-temperature
-            save_results_csv(results, system_prompt_file, model, tmp)
+    for puzzle in puzzles:
+        fen = puzzle["fen"]
+        query_prompt = build_prompt_from_puzzle(puzzle)
+        for tmp in temper:
+            for top_p in top_ps:
+                print(f"\n=== Temp {Color.RED}{tmp}{Color.END} | Top_p {Color.RED}{top_p}{Color.END} | Max tokens {Color.RED}{max_tokens}{Color.END} | Puzzle {puzzle['id']} ===")
+                for model in models:
+                    results = []
+                    print(f"\nTesting {Color.RED}{model}{Color.END}...")
+                    for call_num in range(num_calls):
+                        board = chess.Board(fen)
+                        response = call_model(system_prompt_file, model, query_prompt, tmp, top_p, max_tokens)
+                        move_response = response.split("\n")[0].strip()
+                        move_result = parse_and_evaluate(move_response, board)
+                        move_result["fen"] = fen
+                        results.append(move_result)
+                        print(f"  Call {call_num+1}: Move={move_result['move']} | Legal={move_result['legal']} | Eval={move_result['eval']}")
+                        time.sleep(1)
+                    save_results_csv(results, system_prompt_file, model, tmp, top_p, max_tokens, puzzle["id"])
 
     engine.quit()
