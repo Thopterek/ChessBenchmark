@@ -37,10 +37,10 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str, temp: flo
                     {"role": "system", "content": sys_prompt},
                     {"role": "user", "content": query_prompt}
                 ],
-                "max_tokens": 1000,
+                "max_tokens": temp,
                 "temperature": 0.5,
                 "include_reasoning": False,
-                "top_p": temp
+                # "top_p": temp
             }
         )
         
@@ -170,7 +170,7 @@ def parse_and_evaluate(move_str: str, board: chess.Board):
 
 # ---- SAVE RESULTS ----
 def save_results_csv(results, system_prompt_path, model, tmp):
-    results_dir = "bench_top_p"
+    results_dir = "bench_max_tokens"
     os.makedirs(results_dir, exist_ok=True)
 
     system_name = os.path.splitext(os.path.basename(system_prompt_path))[0]
@@ -247,7 +247,19 @@ if __name__ == "__main__":
         "mistralai/devstral-small",
         "microsoft/phi-4-reasoning-plus",
     ]
-    temper = [round(x * 0.1, 1) for x in range(11)]
+    # temper = [round(x * 0.1, 1) for x in range(11)]
+    temper = [
+        25,
+        50,
+        100,
+        200,
+        400,
+        800,
+        1600,
+        3200,
+        6400,
+        12800
+    ]
     system_prompt_file = "./system_prompts/base.txt"
     fen_file = "391k-valid.fen"
     
@@ -263,7 +275,7 @@ if __name__ == "__main__":
         # fen = "8/5pQB/6n1/6k1/6P1/6K1/8/8"
         # fen = fen + " w - - 0 1"
 
-        print(f"\n=== Temperature {Color.RED}{tmp}{Color.END} | Using FEN #{fen} ===")
+        print(f"\n=== Max tokens {Color.RED}{tmp}{Color.END} | Using FEN #{fen} ===")
         print(fen)
 
         # build prompt once
@@ -271,7 +283,7 @@ if __name__ == "__main__":
 
         for model in models:
             results = []
-            print(f"\nTesting {Color.RED}{model}{Color.END} at temperature {Color.RED}{tmp}{Color.END}")
+            print(f"\nTesting {Color.RED}{model}{Color.END} at max tokens {Color.RED}{tmp}{Color.END}")
 
             for call_num in range(num_calls):
                 board = chess.Board(fen)

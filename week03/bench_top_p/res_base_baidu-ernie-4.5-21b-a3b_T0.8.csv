@@ -1,0 +1,108 @@
+Call#,Move,Legal,UCI,Eval,Normalized,FEN
+1,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+2,Bb2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+3,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+4,Qxf2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+5,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+6,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+7,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+8,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+9,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+10,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+11,Bxf2,True,g1f2,-84 cp,0.466,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+12,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+13,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+14,Qxf2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+15,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+16,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+17,Bxf2,True,g1f2,-12 cp,0.495,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+18,Bxf2,True,g1f2,6 cp,0.502,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+19,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+20,Qxf2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+21,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+22,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+23,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+24,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+25,Bxf2,True,g1f2,44 cp,0.518,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+26,Qe2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+27,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+28,Bb2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+29,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+30,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+31,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+32,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+33,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+34,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+35,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+36,Bxf2,True,g1f2,29 cp,0.512,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+37,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+38,Qxf2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+39,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+40,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+41,Bxf2,True,g1f2,28 cp,0.511,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+42,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+43,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+44,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+45,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+46,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+47,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+48,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+49,Qd6,True,c6d6,Mate in 2,0.905,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+50,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+51,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+52,Qe2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+53,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+54,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+55,Bd2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+56,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+57,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+58,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+59,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+60,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+61,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+62,Bxf2,True,g1f2,7 cp,0.503,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+63,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+64,Qxf2,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+65,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+66,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+67,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+68,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+69,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+70,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+71,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+72,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+73,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+74,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+75,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+76,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+77,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+78,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+79,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+80,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+81,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+82,Bxf2,True,g1f2,27 cp,0.511,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+83,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+84,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+85,Bxf2,True,g1f2,22 cp,0.509,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+86,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+87,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+88,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+89,Qe5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+90,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+91,Qd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+92,Bf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+93,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+94,Bxf2,True,g1f2,4 cp,0.502,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+95,Qe3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+96,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+97,Nf3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+98,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+99,Qxd5,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+100,Bd3,False,,,0.0,4r1n1/3ppN1b/2Q4p/2pP1p2/p1K1kPPn/rR6/3PNbPq/6B1
+,,,,,,
+,=== Summary Statistics ===,,,,,
+,Average Normalized Value,,,0.059,,
+,Standard Deviation,,,0.173,,
+,Mean Absolute Error (from 0.5),,,0.45,,
+,Illegal Moves (%),,,89.00%,,
+,Mean Value (Legal Moves Only),,,0.539,,
