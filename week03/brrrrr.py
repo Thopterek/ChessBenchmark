@@ -259,12 +259,23 @@ if __name__ == "__main__":
         "openai/gpt-4.1-mini",
         "deepseek/deepseek-chat-v3.1"
     ]
-    temper = [0.7]
+    temper = [0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1
+              ]
     top_ps = [0.3]
     max_tokens = 1000
     system_prompt_file = "./system_prompts/base.txt"
-    puzzles = load_pickpocket("pickpocket.txt")
-    num_calls = 1  # run 100 calls per puzzle/temp for stats
+    puzzles = load_pickpocket("pickpocket_after_breakage.txt")
+    num_calls = 100  # run 100 calls per puzzle/temp for stats
 
     for puzzle in puzzles:
         fen = puzzle["fen"]
