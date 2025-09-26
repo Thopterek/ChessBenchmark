@@ -1,0 +1,72 @@
+Greetings Mr Samuel,
+
+We ran into the discussion inside our group about the research that we are doing,
+as for now the biggest part of the data that we worked on was the:
+  
+  Evaluating if LLMs can play chess.
+  Only afterwards we can showcase the strength in law.
+    This parts needs more explanation which you can find below.
+
+All of the below points can only matter if we can gather enough data about point 1. If an LLM can play chess,
+therefore would it make sense for us to continue working just in the domain of chess, as we have not only:
+- time constrains
+- money constrains
+- knowledge blockage:
+  a) we need outside help for statistics
+  b) the AI is unreliable black box, we need more knowledge about ML
+  c) big part that is also present in biases we found are pure linguistics problems
+  d) presenting the prompts (system and user) to lawyers for critique of how they use LLMs
+
+If we would successfully build the base for LLM solving chess puzzles, the whole study could take the steps presented below:
+  1. Taking results from the chess as a baseline for particular model and puzzle
+  2. Changing the system prompt to adjust the role the LLM is taking
+    - changing one sentence per system prompt
+    - working on keeping the use of the chess notation for answer
+  3. Changing the user prompt, its "legalization"
+    - formatting the document per replacing partially its parts
+      a) markdowns to chapters
+      b) points to newlines
+    - changing the tone of the prompt
+      a) using official words / vocabulary
+      b) referencing the documents to be taken account of rather than presenting them
+  4. Keeping the tests running as per looking at the trend line / errors and other metrics
+    - if the results have same standard deviation
+    - if the results have same error percentages
+    - if the quality of moves is on the similar level
+    - if the trend line is stays on the same level
+  5. Referencing a well known legal benchmark and using the same models showcased there
+    - does it align with the base line we had
+    - does it align with the off-shot from the "legalized version"
+
+That's why we would like to ask about the viability of continuing to create a base for possible future studies and your personal opinion.
+Our plan went as follows: 
+1. We made a scale based on expert model (stockfish) and we normalized the data we received from it:
+  - 0.0 illegal moves / syntax error
+  - 0.1 till 0.5 bad but legal moves
+  - 0.5 till 0.9 good legal moves
+  - 0.9 till 1 being the best possible moves
+  It uses the pipeline when we can present different puzzles keeping as much fairness between prompts.
+
+2. Making it fair across different LLMs for each hyper parameter we are working on finding the combined objective for all of them:
+    - Using the combined objective formula Oa(t)=M~(t)-a*D~(t) used by psychological studies to find a trade off between performance and middle ground
+    - We ran 100 tests on multiple llms each having the same prompts but different parameter (eg. x axis is temperature in intervals 0.1)
+      and each point on the graph is the average result of 100 runs, totalling to 1000 tests per model.
+    - We want to do the same across all of the hyper parameters (if time serves).
+
+3. We want to categorize the puzzles that we are giving:
+  - easy, medium, hard for human standards
+  - if we would have time also easy, medium, hard for LLMs but easy for humans (we have some data about it)
+
+4. Finding correlations:
+As we stated before we can't manage to finish the whole studies, but to make a point of our base being actually properly made we want to:
+  - Get an LLM in the domain of LAW and compare it with our benchmark 
+  - then get a LAW benchmark and run it through it to extrapolate correlations
+  - we hope that with these steps we can conclude or disregard the original hypothesis to some extent
+
+One the last note we also got a lot of data about biases (language and gender ones), sadly we are not sure if we should include them in the benchmark itself.
+
+Thank you so much for your time and going through this long message,
+we hope for some guidance and opinion on the matter.
+
+Best regards,
+Nataniel Dziadzia and Giannis Tsiros

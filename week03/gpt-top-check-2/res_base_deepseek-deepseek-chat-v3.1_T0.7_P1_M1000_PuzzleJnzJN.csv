@@ -1,0 +1,114 @@
+Call#,PuzzleID,Move,Legal,UCI,Eval,Normalized,FEN,Temperature,Top_p,Max_tokens
+1,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+2,JnzJN,f6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+3,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+4,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+5,JnzJN,Nxf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+6,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+7,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+8,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+9,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+10,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+11,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+12,JnzJN,Qf5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+13,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+14,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+15,JnzJN,Qf3xd5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+16,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+17,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+18,JnzJN,Nxe6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+19,JnzJN,Nxf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+20,JnzJN,Qe3,True,f3e3,-344 cp,0.362,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+21,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+22,JnzJN,Qxf7,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+23,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+24,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+25,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+26,JnzJN,Qf5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+27,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+28,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+29,JnzJN,Nxf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+30,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+31,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+32,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+33,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+34,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+35,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+36,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+37,JnzJN,Qf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+38,JnzJN,Qxh6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+39,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+40,JnzJN,Qd3,True,f3d3,-670 cp,0.232,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+41,JnzJN,Nh6,True,g4h6,-566 cp,0.274,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+42,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+43,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+44,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+45,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+46,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+47,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+48,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+49,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+50,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+51,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+52,JnzJN,Qf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+53,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+54,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+55,JnzJN,Qg3,True,f3g3,-612 cp,0.255,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+56,JnzJN,Qf7,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+57,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+58,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+59,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+60,JnzJN,Nh6,True,g4h6,-491 cp,0.304,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+61,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+62,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+63,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+64,JnzJN,f5,True,f4f5,-495 cp,0.302,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+65,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+66,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+67,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+68,JnzJN,Qf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+69,JnzJN,g6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+70,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+71,JnzJN,Qxh6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+72,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+73,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+74,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+75,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+76,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+77,JnzJN,Nxe5,True,g4e5,-308 cp,0.377,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+78,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+79,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+80,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+81,JnzJN,Ngf6,True,g4f6,-75 cp,0.47,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+82,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+83,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+84,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+85,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+86,JnzJN,Nxe4,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+87,JnzJN,Nxe5,True,g4e5,-305 cp,0.378,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+88,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+89,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+90,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+91,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+92,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+93,JnzJN,Qf5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+94,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+95,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+96,JnzJN,Nxf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+97,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+98,JnzJN,Nf6,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+99,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+100,JnzJN,Qh5,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,0.7,1,1000
+,,,,,,,,,,
+,,=== Summary Statistics ===,,,,,,,,
+,,Puzzle ID,,,JnzJN,,,,,
+,,Average Normalized Value,,,0.03,,,,,
+,,Standard Deviation,,,0.096,,,,,
+,,Mean Absolute Error (from 0.5),,,0.47,,,,,
+,,Illegal Moves (%),,,91.00%,,,,,
+,,Mean Value (Legal Moves Only),,,0.328,,,,,
+,,Unique Legal Moves,,,7,,,,,
+,,Most Frequent Move,,,Nh6 (2.0%),,,,,
+,,Temperature,,,0.7,,,,,
+,,Top_p,,,1,,,,,
+,,Max_tokens,,,1000,,,,,

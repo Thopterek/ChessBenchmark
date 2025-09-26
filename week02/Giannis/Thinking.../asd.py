@@ -215,7 +215,10 @@ import plotly.express as px
 # ---- MAIN LOOP ----
 if __name__ == "__main__":
     models = [
-        "google/gemini-2.5-flash-lite"
+        # "google/gemini-2.5-flash-lite",
+        # "openai/gpt-5-nano",
+        "openai/gpt-4.1-mini"
+        # "anthropic/claude-sonnet-4"
     ]
     temper = [
        0.0,
@@ -231,10 +234,10 @@ if __name__ == "__main__":
        1
    ] 
     system_prompt_file = "../system_prompts/MdLike.txt"
-    query_prompt_file = "../prompts/week01Best.txt"
+    query_prompt_file = "../prompts/puzzle02.txt"
     
     num_calls = 100
-    fen_str = "3qr2k/pbpp2pp/1p5N/3Q4/2P1P1b1/P7/1PP2PPP/R3RK2 w - - 0 1"
+    fen_str = "r1bq2k1/ppp2r1p/2np1pNQ/2bNpp2/2B1P3/3P4/PPP2PPP/R3K2R w KQ - 0 1"
 
     temp_values = []
     avg_norm_values = []
@@ -282,3 +285,53 @@ if __name__ == "__main__":
     )
     fig.update_traces(mode="markers")  # scatter with connecting line
     fig.show()
+    
+
+ We are trying to evaluate decision making using chess ass a tool to check and evaluate an LLM in the domain of law
+
+If an LLM can play chess we can evaluate and find corelations in the law domain
+
+
+    # Benchmark
+
+    # tests
+    # - where from Lichess 2H
+    # - why used in different study (link it)
+    # - how by the formula Glicko 2a
+
+    # *TBD*
+    # - or explain difference
+    # - using research for research picking from their data
+    # - change of prompt (if time serves now if not next week)
+
+    # fairness
+    # - definition of fairness
+    # - formula used to calculate it
+    # - applied to hyper parameters
+
+    # *TBD*
+    # - presenting def
+    # - showcasing formula
+    # - graphs / results we used
+
+    # metrics
+    # - showcase our metric
+    # - talking about problem of it
+    # - making it more scientific
+
+    # *TBD*
+    # - what we used till now
+    # - why we know its not good
+    # - how to make it properly
+
+    # data sample
+    # - how we found the correct amount 25 - 100 - 1000
+    # - what was the equation for it
+    # - from which graphs we got it
+
+    # *TBD*
+    # - the test we ran and values we got
+    # - showcase the equation
+    # - visual fluff
+
+    # closure
