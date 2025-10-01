@@ -1,0 +1,114 @@
+Call#,PuzzleID,Move,Legal,UCI,Eval,Normalized,FEN,Temperature,Top_p,Max_tokens
+1,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+2,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+3,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+4,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+5,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+6,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+7,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+8,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+9,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+10,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+11,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+12,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+13,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+14,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+15,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+16,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+17,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+18,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+19,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+20,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+21,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+22,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+23,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+24,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+25,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+26,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+27,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+28,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+29,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+30,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+31,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+32,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+33,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+34,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+35,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+36,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+37,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+38,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+39,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+40,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+41,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+42,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+43,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+44,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+45,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+46,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+47,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+48,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+49,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+50,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+51,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+52,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+53,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+54,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+55,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+56,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+57,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+58,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+59,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+60,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+61,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+62,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+63,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+64,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+65,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+66,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+67,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+68,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+69,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+70,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+71,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+72,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+73,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+74,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+75,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+76,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+77,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+78,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+79,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+80,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+81,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+82,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+83,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+84,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+85,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+86,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+87,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+88,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+89,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+90,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+91,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+92,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+93,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+94,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+95,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+96,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+97,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+98,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+99,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+100,8rc5R,Qf8,True,b8f8,Mate in 0,1.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,0.7,0.1,1000
+,,,,,,,,,,
+,,=== Summary Statistics ===,,,,,,,,
+,,Puzzle ID,,,8rc5R,,,,,
+,,Average Normalized Value,,,1.0,,,,,
+,,Standard Deviation,,,0.0,,,,,
+,,Mean Absolute Error (from 0.5),,,0.5,,,,,
+,,Illegal Moves (%),,,0.00%,,,,,
+,,Mean Value (Legal Moves Only),,,1.0,,,,,
+,,Unique Legal Moves,,,1,,,,,
+,,Most Frequent Move,,,Qf8 (100.0%),,,,,
+,,Temperature,,,0.7,,,,,
+,,Top_p,,,0.1,,,,,
+,,Max_tokens,,,1000,,,,,

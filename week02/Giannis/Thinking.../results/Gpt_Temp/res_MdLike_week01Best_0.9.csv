@@ -1,0 +1,108 @@
+Model,Call#,Move,Legal,UCI,Eval,Normalized
+openai/gpt-4.1-mini,1,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,2,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,3,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,4,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,5,Qxf7,True,d5f7,34 cp,0.517
+openai/gpt-4.1-mini,6,Qxf7,True,d5f7,14 cp,0.507
+openai/gpt-4.1-mini,7,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,8,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,9,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,10,Nxg4,True,h6g4,19 cp,0.509
+openai/gpt-4.1-mini,11,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,12,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,13,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,14,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,15,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,16,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,17,Qg8Rxg8,False,,,0.0
+openai/gpt-4.1-mini,18,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,19,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,20,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,21,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,22,Qxf7,True,d5f7,50 cp,0.525
+openai/gpt-4.1-mini,23,Qxf7,True,d5f7,51 cp,0.525
+openai/gpt-4.1-mini,24,Nf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,25,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,26,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,27,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,28,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,29,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,30,Qxf7,True,d5f7,55 cp,0.527
+openai/gpt-4.1-mini,31,Nf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,32,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,33,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,34,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,35,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,36,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,37,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,38,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,39,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,40,Qxf7,True,d5f7,56 cp,0.528
+openai/gpt-4.1-mini,41,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,42,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,43,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,44,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,45,Qxf7,True,d5f7,40 cp,0.52
+openai/gpt-4.1-mini,46,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,47,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,48,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,49,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,50,Nf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,51,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,52,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,53,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,54,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,55,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,56,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,57,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,58,Nhf5,True,h6f5,-447 cp,0.276
+openai/gpt-4.1-mini,59,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,60,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,61,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,62,Qxf7,True,d5f7,49 cp,0.524
+openai/gpt-4.1-mini,63,Qg8Rxg8,False,,,0.0
+openai/gpt-4.1-mini,64,Nxg4,True,h6g4,-3 cp,0.498
+openai/gpt-4.1-mini,65,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,66,Qxf7,True,d5f7,49 cp,0.524
+openai/gpt-4.1-mini,67,Qxf7,True,d5f7,56 cp,0.528
+openai/gpt-4.1-mini,68,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,69,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,70,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,71,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,72,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,73,Qf7g7,False,,,0.0
+openai/gpt-4.1-mini,74,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,75,Qg8Rxg8,False,,,0.0
+openai/gpt-4.1-mini,76,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,77,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,78,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,79,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,80,Qxf7,True,d5f7,53 cp,0.526
+openai/gpt-4.1-mini,81,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,82,Qg8Rxg8,False,,,0.0
+openai/gpt-4.1-mini,83,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,84,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,85,Qf7,True,d5f7,51 cp,0.525
+openai/gpt-4.1-mini,86,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,87,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,88,Qxf7,True,d5f7,52 cp,0.526
+openai/gpt-4.1-mini,89,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,90,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,91,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,92,Qg8Rxg8,False,,,0.0
+openai/gpt-4.1-mini,93,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,94,Qxf7,True,d5f7,48 cp,0.524
+openai/gpt-4.1-mini,95,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,96,Qxd8,False,,,0.0
+openai/gpt-4.1-mini,97,Qg8,True,d5g8,Mate in 1,1.0
+openai/gpt-4.1-mini,98,Nhf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,99,Nf7,True,h6f7,Mate in 3,0.98
+openai/gpt-4.1-mini,100,Nhf7,True,h6f7,Mate in 3,0.98
+,,,,,,
+=== Summary Statistics ===,,,,,,
+Average Normalized Value,,,,,0.723,
+Standard Deviation,,,,,0.394,
+Mean Absolute Error (from 0.5),,,,,0.418,
+Illegal Moves (%),,,,,19.00%,
+Mean Value (Legal Moves Only),,,,,0.893,
