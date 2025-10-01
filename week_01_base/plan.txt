@@ -1,36 +1,36 @@
 1. System Prompt: the most full possible recollection of content in prompt:
-    - Clear rule set of the promp with fully build scale (like the ones leaked)
-    - Different way to format the rules and the board state, so its Human understandble (or LLM made for LLM)
-    - Giving the explanation of the FEN of the notation to every prompt
+    + Clear rule set of the promp with fully build scale (like the ones leaked)
+    + Different way to format the rules and the board state, so its Human understandble (or LLM made for LLM)
+    + Giving the explanation of the FEN of the notation to every prompt
     - **Finding out how to check for the small changes**
-    - Clear label for each of them
+    + Clear label for each of them
 
 2. Optimal setting for each model:
-    - setting up the temperature
-    - max tokens
-    - time to iterate
+    + setting up the temperature
+    + max tokens
+    + time to iterate
 
 3. Read about long context argument
     - giving him the moves that were prior to the board state that it is now
     - read about the long context argument benchmarks
 
 4. Bias
-    - diff languages
+    + diff languages
     - diff document formats
-    - gender of the player (female / male / non binary grandmaster)
+    + gender of the player (female / male / non binary grandmaster)
     - age differences (I am 13 year old, I am 60 year old)
-    - threating the model to give better results
+    -/+ threating the model to give better results
 
 Life saver:
-    - Finding out how much they know FEN
-    - Figuring out how much they know Chess
+    + Finding out how much they know FEN
+    + Figuring out how much they know Chess
 
 Side quest: Compare the tests when we give the possible answer
-    - make one of the moves A B C D
-    - does it use his assumptions or our given context
-    - Pipe the output into stockfish if thats possible
+    + make one of the moves A B C D
+    +/- does it use his assumptions or our given context
+    + Pipe the output into stockfish if thats possible
     - Does the vectorization and labeling help
-    - Money cost and other flexing points
+    + Money cost and other flexing points
 
 ### NOTE, ONLY 3.5 CARED ABOUT SYSTEM PROMPT
 prompt_02.txt and howgood.txt

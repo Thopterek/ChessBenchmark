@@ -148,12 +148,18 @@ def create_chess_board(fen):
     """
     # Define piece mapping
     piece_symbols = {
-        'r': '♜', 'R': '♖',
-        'n': '♞', 'N': '♘',
-        'b': '♝', 'B': '♗',
-        'q': '♛', 'Q': '♕',
-        'k': '♚', 'K': '♔',
-        'p': '♟', 'P': '♙'
+        # 'r': '♜', 'R': '♖',
+        # 'n': '♞', 'N': '♘',
+        # 'b': '♝', 'B': '♗',
+        # 'q': '♛', 'Q': '♕',
+        # 'k': '♚', 'K': '♔',
+        # 'p': '♟', 'P': '♙'
+        'r': 'r', 'R': 'R',
+        'n': 'n', 'N': 'N',
+        'b': 'b', 'B': 'B',
+        'q': 'q', 'Q': 'Q',
+        'k': 'k', 'K': 'K',
+        'p': 'p', 'P': 'P'
     }
     
     # Split FEN into parts and take only the board position
@@ -193,7 +199,7 @@ def create_chess_board(fen):
 
 if __name__ == "__main__":
     # FEN notation for the given board position
-    fen_notation = "r1b2rk1/ppp2p1p/1b1p1B2/5q1Q/2Bp4/2P5/PP3PPP/R3R1K1 w - - 0 1"
+    fen_notation = "r4rk1/1p3ppp/4b3/q2PQ3/2p5/P7/1B3PPP/5RK1 w - - 0 20"
     # Generate and print the chess board
     print(create_chess_board(fen_notation))
     create_chess_board(fen_notation)

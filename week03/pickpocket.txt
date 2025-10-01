@@ -467,6 +467,28 @@ Answer UCI : e5e6
 Rating 0.73 -> 0.82, 
 ------------------------------
 
+----
+Easy
+----
+
+Puzzle ID : CeuuK
+
+Rating : 0.744177
+
+FEN : 2r1r1k1/pq3pp1/2N4p/2Qp4/P7/3b3P/3N1PP1/R1R3K1 b - - 0 25
+
+PGN : 1. e4 c5 2. Nf3 e6 3. Be2 Nc6 4. O-O d5 5. exd5 exd5 6. Bb5 Qc7 7. Re1+ Be7 8. Qe2 Be6 9. Bxc6+ bxc6 10. d3 Nf6 11. Bg5 O-O 12. h3 h6 13. Bh4 Nh5 14. Bxe7 Qxe7 15. Qe5 Qf6 16. Qxh5 Qxb2 17. Nbd2 Qxc2 18. d4 cxd4 19. Rec1 Qb2 20. Qe5 Rfe8 21. Qxd4 Qb7 22. Qc5 Rac8 23. a4 Bf5 24. Nd4 Bd3 25. Nxc6 *
+
+UCI : e2e4, c7c5, g1f3, e7e6, f1e2, b8c6, e1g1, d7d5, e4d5, e6d5, e2b5, d8c7, f1e1, f8e7, d1e2, c8e6, b5c6, b7c6, d2d3, g8f6, c1g5, e8g8, h2h3, h7h6, g5h4, f6h5, h4e7, c7e7, e2e5, e7f6, e5h5, f6b2, b1d2, b2c2, d3d4, c5d4, e1c1, c2b2, h5e5, f8e8, e5d4, b2b7, d4c5, a8c8, a2a4, e6f5, f3d4, f5d3, d4c6
+
+Answer SAN : Rxc6
+
+Answer UCI : c8c6
+
+------
+Medium
+------
+
 Puzzle ID : On8u6
 
 Rating : 0.782609
@@ -481,10 +503,66 @@ Answer SAN : Qe4
 
 Answer UCI : e2e4
 
+----
+Hard
+----
+
+Puzzle ID : bH6b8
+
+Rating : 0.810171
+
+FEN : r3k2r/1p1bPpbp/p1n3p1/1Bq5/7P/B2Q4/P1P2PP1/1R3KNR b kq - 1 14
+
+PGN : 1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Be2 Bg7 5. h4 c5 6. dxc5 Qa5 7. cxd6 Nxe4 8. dxe7 Nxc3 9. bxc3 Qxc3+ 10. Kf1 Nc6 11. Bb5 Bd7 12. Rb1 Qc5 13. Qd3 a6 14. Ba3 *
+
+UCI : e2e4, d7d6, d2d4, g8f6, b1c3, g7g6, f1e2, f8g7, h2h4, c7c5, d4c5, d8a5, c5d6, f6e4, d6e7, e4c3, b2c3, a5c3, e1f1, b8c6, e2b5, c8d7, a1b1, c3c5, d1d3, a7a6, c1a3
+
+Answer SAN : Qb6
+
+Answer UCI : c5b6
+
 ------------------------------
 Rating 0.82 -> 0.91, Advantage
 ------------------------------
 
+----
+Easy
+----
+
+Puzzle ID : ZfXoo
+
+Rating : 0.822981
+
+FEN : r4r1k/p1p1bp2/1p2p2B/1q2Nb1P/3P4/4QP2/PPP5/1K1R4 w - - 1 23
+
+PGN : 1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Nxf6+ Nxf6 7. Bd3 Be7 8. Bf4 O-O 9. Qd2 b6 10. O-O-O Bb7 11. Ne5 Nd5 12. Bg3 Nb4 13. Kb1 Nxd3 14. Qxd3 Bxg2 15. Rhg1 Qd5 16. f3 Bh3 17. Qe3 Bf5 18. h4 Qb5 19. h5 h6 20. Bf4 Kh7 21. Rxg7+ Kxg7 22. Bxh6+ Kh8 *
+
+UCI : e2e4, e7e6, d2d4, d7d5, b1c3, d5e4, c3e4, b8d7, g1f3, g8f6, e4f6, d7f6, f1d3, f8e7, c1f4, e8g8, d1d2, b7b6, e1c1, c8b7, f3e5, f6d5, f4g3, d5b4, c1b1, b4d3, d2d3, b7g2, h1g1, d8d5, f2f3, g2h3, d3e3, h3f5, h2h4, d5b5, h4h5, h7h6, g3f4, g8h7, g1g7, h7g7, f4h6, g7h8
+
+Answer SAN : Rg1
+
+Answer UCI : d1g1
+
+
+------
+Medium
+------
+
+Puzzle ID : 74Qsc
+
+Rating : 0.862578
+
+FEN : 6k1/1pp5/1b2bN1p/p3Brp1/Pn3p2/5P1P/1PP1B1KP/2R5 b - - 3 27
+
+PGN : 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. a4 d5 6. Be2 dxe4 7. Ne1 Be6 8. d3 O-O 9. Nc3 exd3 10. Nxd3 Bb6 11. Bg5 h6 12. Bh4 g5 13. Bg3 e4 14. Nc1 a5 15. Qxd8 Raxd8 16. Nb3 Nb4 17. Rac1 e3 18. Kh1 Ng4 19. f3 Nf2+ 20. Kg1 f5 21. Be5 Rd2 22. Nxd2 Nh3+ 23. gxh3 exd2+ 24. Kg2 dxc1=Q 25. Rxc1 f4 26. Ne4 Rf5 27. Nf6+ *
+
+Answer SAN : Kf8
+
+Answer UCI : g8f8
+
+----
+Hard
+----
 Puzzle ID : Evxmg
 
 Rating : 0.884317
