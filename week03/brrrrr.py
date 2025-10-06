@@ -11,7 +11,7 @@ import random
 
 # ---- CONFIG ----
 OP_TOKEN = os.environ.get("OP_TOKEN")
-STOCKFISH_PATH = "/Users/jtsiros93/homebrew/bin/stockfish"
+STOCKFISH_PATH = "/Users/salvador.dali.disciple/homebrew/bin/stockfish"
 engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH_PATH)
 
 # ---- SYSTEM PROMPT ----
@@ -170,7 +170,7 @@ def parse_and_evaluate(move_str: str, board: chess.Board):
 
 # ---- SAVE RESULTS ----
 def save_results_csv(results, system_prompt_path, model, tmp, top_p, max_tokens, puzzle_id):
-    results_dir = "gpt-top-check-2"
+    results_dir = "gpt-temp-check"
     os.makedirs(results_dir, exist_ok=True)
     system_name = os.path.splitext(os.path.basename(system_prompt_path))[0]
     filename = os.path.join(
@@ -259,24 +259,12 @@ if __name__ == "__main__":
         "openai/gpt-4.1-mini",
         "deepseek/deepseek-chat-v3.1"
     ]
-    temper = [0.7]
-    top_ps = [
-        0.0,
-        0.1,
-        0.2,
-        0.3,
-        0.4,
-        0.5,
-        0.6,
-        0.7,
-        0.8,
-        0.9,
-        1
-        ]
+    temper = [0.0]
+    top_ps = [1]
     max_tokens = 1000
     system_prompt_file = "./system_prompts/base.txt"
     puzzles = load_pickpocket("pickpocket.txt")
-    num_calls = 100  # run 100 calls per puzzle/temp for stats
+    num_calls = 1  # run 100 calls per puzzle/temp for stats
 
     for puzzle in puzzles:
         fen = puzzle["fen"]

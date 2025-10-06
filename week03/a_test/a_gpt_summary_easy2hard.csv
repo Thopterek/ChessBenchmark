@@ -1,0 +1,9 @@
+GPT 4.1 mini,Easy,Medium,Hard
+Average Normalized Value,0.55838,0.364389,0.321182
+Standard Deviation,0.39473,0.309364,0.289809
+Mean Absolute Error,0.374002,0.293663,0.27929
+Illegal Moves (%),16.7,34.6,42.3
+Puzzle Solving Accuracy (%),36.1,20.0,15.4
+Mean Value (Legal Moves Only),0.670324,0.55717,0.556641
+Average Latency (s),,,
+Average Tokens (total),762.125,610.964,594.5636
