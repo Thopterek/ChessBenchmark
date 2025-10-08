@@ -1,0 +1,62 @@
+Call#,PuzzleID,Move,Correct,Legal,UCI,Eval,Normalized,FEN,Latency_s,Prompt_tokens,Completion_tokens,Total_tokens,Cost,Temperature,Top_p,Max_tokens
+1,9la6a,Rxe1,True,True,e8e1,Mate in 0,1.0,r5k1/2p2p2/5nPp/p7/Np6/1B6/PPP3Q1/1K2r3 w - - 0 32,1.845,883,14,897,0.014295,0.0,1,4096
+2,uaey4,"Looking at this position, I need to eval...",False,False,,,0.0,r4rk1/1p3ppp/4b3/q2PQ3/2p5/P7/1B3PPP/5RK1 w - - 0 20,10.578,637,340,977,0.035055,0.0,1,4096
+3,oTHzu,"Let me analyze the current position:
+
+Wh...",False,False,,,0.0,r4rk1/p4p1p/1pNp1B2/1P1P1q2/2P5/8/P5PP/R5K1 w - - 0 25,10.72,746,334,1080,0.03624,0.0,1,4096
+4,QEluK,Nf2,True,True,h3f2,Mate in 0,1.0,2r5/6kp/p4pp1/1p1P4/2p2P2/P1Q3P1/5nBP/3R2NK w - - 1 33,1.615,896,14,910,0.01449,0.0,1,4096
+5,8rc5R,"Looking at this position, I need to anal...",False,False,,,0.0,1Q6/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 w - - 13 46,11.37,1194,405,1599,0.048285,0.0,1,4096
+6,VKNaw,"Let me analyze the current position:
+
+Th...",False,False,,,0.0,5rk1/p4ppp/1p2p3/3p4/P3nB2/1q3Q2/5PPP/3R2K1 w - - 0 23,12.603,710,468,1178,0.04575,0.0,1,4096
+7,4O70b,"Let me analyze the current position:
+
+Wh...",False,False,,,0.0,1R6/p4p1k/2p3pp/3p4/3P4/7P/P4Q2/3qrN1K w - - 2 36,7.452,976,261,1237,0.034215,0.0,1,4096
+8,3pap0,Let me analyze the current position. Whi...,False,False,,,0.0,3r2k1/5R1p/1p3p2/p2B4/2P5/6P1/Pb3P1P/6K1 b - - 0 23,14.142,716,551,1267,0.052065,0.0,1,4096
+9,2r45i,Let me analyze the current position afte...,False,False,,,0.0,1r5k/4b2p/2p5/p1p4P/P1Pp1Kn1/1P1Pp3/1R2P3/7R w - - 0 38,16.708,1008,620,1628,0.06162,0.0,1,4096
+10,9HI0Q,"Let me analyze the current position:
+
+Th...",False,False,,,0.0,k3r2r/1p4p1/p4b2/4p3/1q1p4/1P1Q2B1/R5PP/R6K w - - 0 31,11.148,872,356,1228,0.03978,0.0,1,4096
+11,m3lLD,Let me analyze the current position afte...,False,False,,,0.0,4k1r1/pp2rqp1/2p5/7p/3P4/2NP1P1Q/PP4PP/4R1K1 w - - 0 24,12.956,728,497,1225,0.048195,0.0,1,4096
+12,jBhrJ,"Looking at this position, I need to eval...",False,False,,,0.0,r3r1k1/p3bppp/1p3n2/2nq1NB1/4p3/P6P/1PPNQPP1/1K1R3R b - - 1 18,11.442,610,352,962,0.03555,0.0,1,4096
+13,Ya986,Rxd1,True,True,d8d1,-422 cp,0.331,1k2r3/p1q5/1p6/1P2BP2/P1b2Q2/2R3P1/7P/3r2K1 w - - 0 39,2.493,1024,14,1038,0.01641,0.0,1,4096
+14,Om0Kx,"Looking at this position, I need to asse...",False,False,,,0.0,rn3N1k/p2q2pp/1p1b4/3Nn1P1/5p1P/P7/1PQ1PP2/R1B2RK1 b - - 0 20,15.123,651,530,1181,0.049515,0.0,1,4096
+15,oyfhP,"Looking at this position, Black has a po...",False,False,,,0.0,2k1r3/p7/1ppb4/7R/3K1P2/1N2r3/PPP5/7R b - - 1 29,7.099,843,231,1074,0.02997,0.0,1,4096
+16,8lqBw,"Looking at this position, I need to reca...",False,False,,,0.0,r2q1rk1/ppp2ppp/2n5/1B2p1N1/1b4b1/2nP4/PPP2PPP/R1B1QRK1 w - - 0 11,9.566,464,323,787,0.031185,0.0,1,4096
+17,ubChO,"Looking at this position, I need to reca...",False,False,,,0.0,r2qk2r/pp2bpp1/2np1n1p/2p1P3/2P2B2/2NP1b2/PP2B1PP/R2Q1RK1 w kq - 0 11,9.217,459,329,788,0.03156,0.0,1,4096
+18,R9vqz,Let me analyze the current position care...,False,False,,,0.0,r3kb1r/p2nn1pp/1ppqp3/2Np2N1/1P1P2P1/2PQB3/P4P2/R4RK1 w kq - 0 19,14.898,617,574,1191,0.052305,0.0,1,4096
+19,JBwqi,Let me analyze the current position afte...,False,False,,,0.0,r1b2rk1/ppq2ppp/2nb4/8/2B2pP1/2N2N2/PP2QPP1/R2R2K1 w - - 1 15,11.617,537,414,951,0.039105,0.0,1,4096
+20,JnzJN,Nf5,False,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,1.705,957,14,971,0.015405,0.0,1,4096
+21,pl40T,"Looking at this position, White has just...",False,False,,,0.0,rn1qrn1k/pb2b1pB/1p2R2p/2pp4/3P4/2N2N2/PPQ2PPP/R1B3K1 w - - 1 1,10.203,576,297,873,0.030915,0.0,1,4096
+22,R2rPD,"Looking at the position, Black has just ...",False,False,,,0.0,r1b1r1k1/q2n1pbp/2pB2p1/p3P3/Np6/1BP2N1P/PP3nP1/R2QR1K1 w - - 0 17,7.87,579,280,859,0.029685,0.0,1,4096
+23,CbXto,"Looking at this position, I need to anal...",False,False,,,0.0,r4r1k/1pp2Ppp/1b1q4/pP5n/P1B1N2P/2P2N2/1BQ2nK1/R3R3 b - - 2 23,12.038,718,392,1110,0.04017,0.0,1,4096
+24,Ylf61,"Let me analyze the current position:
+
+Wh...",False,False,,,0.0,5rk1/2p2p2/pp3P1p/2p1P1p1/q1P5/4QP1P/P2R4/6K1 w - - 1 31,13.922,863,478,1341,0.048795,0.0,1,4096
+25,CeuuK,Let me analyze the current position afte...,False,False,,,0.0,2r1r1k1/pq3pp1/2N4p/2Qp4/P7/3b3P/3N1PP1/R1R3K1 b - - 0 25,5.069,767,149,916,0.02268,0.0,1,4096
+26,On8u6,"Let me analyze the current position:
+
+Th...",False,False,,,0.0,2k5/6p1/3qp2r/1p5p/2pP1b2/2P2P1p/1R2Q3/5RK1 w - - 0 35,10.967,943,373,1316,0.04212,0.0,1,4096
+27,bH6b8,"Let me analyze the current position:
+
+- ...",False,False,,,0.0,r3k2r/1p1bPpbp/p1n3p1/1Bq5/7P/B2Q4/P1P2PP1/1R3KNR b kq - 1 14,9.825,538,330,868,0.03282,0.0,1,4096
+28,ZfXoo,Let me analyze the current position afte...,False,False,,,0.0,r4r1k/p1p1bp2/1p2p2B/1q2Nb1P/3P4/4QP2/PPP5/1K1R4 w - - 1 23,11.901,716,422,1138,0.04239,0.0,1,4096
+29,74Qsc,"Looking at the position, Black is in che...",False,False,,,0.0,6k1/1pp5/1b2bN1p/p3Brp1/Pn3p2/5P1P/1PP1B1KP/2R5 b - - 3 27,10.432,530,374,904,0.036,0.0,1,4096
+30,Evxmg,"Let me analyze the position carefully.
+
+...",False,False,,,0.0,r1b1k2r/2ppnppp/1p6/p3P3/P7/1N1QPN2/1qP2PPP/R3K2R w KQkq - 0 14,17.822,532,700,1232,0.06048,0.0,1,4096
+,,,,,,,,,,,,,,,,
+=== Summary Statistics ===,,,,,,,,,,,,,,,,
+Average Normalized Value,,,,,,0.7771,,,,,,,,,,
+Standard Deviation,,,,,,0.3153,,,,,,,,,,
+Mean Absolute Error (from 0.5),,,,,,0.3896,,,,,,,,,,
+Illegal Moves (%),,,,,,90.0%,,,,,,,,,,
+Puzzle Solving Accuracy (%),,,,,,10.0%,,,,,,,,,,
+Mean Value (Legal Moves Only),,,,,,0.7771,,,,,,,,,,
+Average Latency (s),,,,,,10.1449,,,,,,,,,,
+Average Tokens (total),,,,,,1090.87,,,,,,,,,,
+Total Cost,,,,,,1.11705,,,,,,,,,,
+Average Cost per Call,,,,,,0.037235,,,,,,,,,,
+Temperature,,,,,,0.0,,,,,,,,,,
+Top_p,,,,,,1,,,,,,,,,,
+Max_tokens,,,,,,4096,,,,,,,,,,

@@ -1,0 +1,9 @@
+,Easy,Medium,Hard
+Average Normalized Value,0.1983,0.2541,0.2054
+Standard Deviation,0.297629,0.258344,0.252604
+Mean Absolute Error,0.4017,0.3031,0.3142
+Illegal Moves (%),50.0,40.0,60.0
+Puzzle Solving Accuracy (%),10.0,0.0,10.0
+Mean Value (Legal Moves Only),0.3966,0.4235,0.5135
+Average Latency (s),,,
+Average Tokens (total),761.3,610.2,593.2

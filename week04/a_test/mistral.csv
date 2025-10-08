@@ -1,0 +1,46 @@
+Call#,PuzzleID,Move,Correct,Legal,UCI,Eval,Normalized,FEN,Latency_s,Prompt_tokens,Completion_tokens,Total_tokens,Cost,Temperature,Top_p,Max_tokens
+1,9la6a,Rxe1,True,True,e8e1,Mate in 0,1.0,r5k1/2p2p2/5nPp/p7/Np6/1B6/PPP3Q1/1K2r3 w - - 0 32,0.405,811,5,816,0.0003344,0.0,1,4096
+2,uaey4,Qe7,False,False,,,0.0,r4rk1/1p3ppp/4b3/q2PQ3/2p5/P7/1B3PPP/5RK1 w - - 0 20,0.435,585,4,589,0.000242,0.0,1,4096
+3,oTHzu,Qd5,False,False,,,0.0,r4rk1/p4p1p/1pNp1B2/1P1P1q2/2P5/8/P5PP/R5K1 w - - 0 25,1.015,678,4,682,0.0002792,0.0,1,4096
+4,QEluK,Kf2,False,False,,,0.0,2r5/6kp/p4pp1/1p1P4/2p2P2/P1Q3Pn/6BP/3R2NK b - - 0 32,0.429,830,4,834,0.00034,0.0,1,4096
+5,8rc5R,Qb7,False,True,b8b7,-725 cp,0.21,8/1Q2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 b - - 0 46,0.411,1111,4,1115,0.0004524,0.0,1,4096
+6,VKNaw,Qd5,False,False,,,0.0,5rk1/p4ppp/1p2p3/3p4/P3nB2/1q3Q2/5PPP/3R2K1 w - - 0 23,0.492,643,4,647,0.0002652,0.0,1,4096
+7,4O70b,Qe2,False,True,f2e2,Mate in -3,0.1,1R6/p4p1k/2p3pp/3p4/3P4/7P/P3Q3/3qrN1K b - - 3 36,0.585,893,4,897,0.0003652,0.0,1,4096
+8,3pap0,Kg8,False,False,,,0.0,3r2k1/5R1p/1p3p2/p2B4/2P5/6P1/Pb3P1P/6K1 b - - 0 23,0.537,654,4,658,0.0002696,0.0,1,4096
+9,2r45i,Rg1,False,True,h1g1,-405 cp,0.338,1r5k/4b2p/2p5/p1p4P/P1Pp1Kn1/1P1Pp3/1R2P3/6R1 b - - 1 38,0.439,928,4,932,0.0003792,0.0,1,4096
+10,9HI0Q,Qe3,False,True,d3e3,-556 cp,0.278,k3r2r/1p4p1/p4b2/4p3/1q1p4/1P2Q1B1/R5PP/R6K b - - 1 31,1.524,800,4,804,0.000328,0.0,1,4096
+11,m3lLD,Rxe7,False,True,e1e7,-56 cp,0.478,4k1r1/pp2Rqp1/2p5/7p/3P4/2NP1P1Q/PP4PP/6K1 b - - 0 24,1.435,666,4,670,0.0002744,0.0,1,4096
+12,jBhrJ,Rc8,False,False,,,0.0,r3r1k1/p3bppp/1p3n2/2nq1NB1/4p3/P6P/1PPNQPP1/1K1R3R b - - 1 18,0.319,562,4,566,0.0002328,0.0,1,4096
+13,Ya986,Qd7,False,False,,,0.0,1k1rr3/p1q5/1p6/1P2BP2/P1b2Q2/2R3P1/7P/3R2K1 b - - 0 38,1.794,949,4,953,0.0003876,0.0,1,4096
+14,Om0Kx,Qd7b7,False,True,d7b7,Mate in 1,0.99,rn3N1k/pq4pp/1p1b4/3Nn1P1/5p1P/P7/1PQ1PP2/R1B2RK1 w - - 1 21,0.856,597,6,603,0.0002508,0.0,1,4096
+15,oyfhP,Rd7,False,False,,,0.0,2k1r3/p7/1ppb4/7R/3K1P2/1N2r3/PPP5/7R b - - 1 29,0.587,775,4,779,0.000318,0.0,1,4096
+16,8lqBw,Nf3,False,True,g5f3,-708 cp,0.217,r2q1rk1/ppp2ppp/2n5/1B2p3/1b4b1/2nP1N2/PPP2PPP/R1B1QRK1 b - - 1 11,0.413,422,4,426,0.0001768,0.0,1,4096
+17,ubChO,Qxf3,False,False,,,0.0,r2qk2r/pp2bpp1/2np1n1p/2p1P3/2P2B2/2NP1b2/PP2B1PP/R2Q1RK1 w kq - 0 11,0.466,422,4,426,0.0001768,0.0,1,4096
+18,R9vqz,Nf3,False,True,g5f3,-191 cp,0.424,r3kb1r/p2nn1pp/1ppqp3/2Np4/1P1P2P1/2PQBN2/P4P2/R4RK1 b kq - 1 19,4.513,570,4,574,0.000236,0.0,1,4096
+19,JBwqi,Bc4,False,False,,,0.0,r1b2rk1/ppq2ppp/2nb4/8/2B2pP1/2N2N2/PP2QPP1/R2R2K1 w - - 1 15,0.355,492,4,496,0.0002048,0.0,1,4096
+20,JnzJN,Qf6,False,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,2.556,883,4,887,0.0003612,0.0,1,4096
+21,pl40T,Qg4,False,False,,,0.0,rn1qrn1k/pb2b1pB/1p2R2p/2pp4/3P4/2N2N2/PPQ2PPP/R1B3K1 w - - 1 1,0.838,530,4,534,0.00022,0.0,1,4096
+22,R2rPD,Qd2,False,True,d1d2,13 cp,0.505,r1b1r1k1/q2n1pbp/2pB2p1/p3P3/Np6/1BP2N1P/PP1Q1nP1/R3R1K1 b - - 1 17,0.451,532,4,536,0.0002208,0.0,1,4096
+23,CbXto,Qe7,False,True,d6e7,646 cp,0.758,r4r1k/1pp1qPpp/1b6/pP5n/P1B1N2P/2P2N2/1BQ2nK1/R3R3 w - - 3 24,0.566,661,4,665,0.0002724,0.0,1,4096
+24,Ylf61,Qd3,False,True,e3d3,82 cp,0.533,5rk1/2p2p2/pp3P1p/2p1P1p1/q1P5/3Q1P1P/P2R4/6K1 b - - 2 31,0.597,792,4,796,0.0003248,0.0,1,4096
+25,CeuuK,Qc7,False,True,b7c7,403 cp,0.661,2r1r1k1/p1q2pp1/2N4p/2Qp4/P7/3b3P/3N1PP1/R1R3K1 w - - 1 26,0.464,698,4,702,0.0002872,0.0,1,4096
+26,On8u6,Qe4,True,True,e2e4,204 cp,0.582,2k5/6p1/3qp2r/1p5p/2pPQb2/2P2P1p/1R6/5RK1 b - - 1 35,0.459,868,4,872,0.0003552,0.0,1,4096
+27,bH6b8,O-O,False,False,,,0.0,r3k2r/1p1bPpbp/p1n3p1/1Bq5/7P/B2Q4/P1P2PP1/1R3KNR b kq - 1 14,0.43,490,3,493,0.000202,0.0,1,4096
+28,ZfXoo,Qf3,False,False,,,0.0,r4r1k/p1p1bp2/1p2p2B/1q2Nb1P/3P4/4QP2/PPP5/1K1R4 w - - 1 23,0.441,651,4,655,0.0002684,0.0,1,4096
+29,74Qsc,Kg7,False,True,g8g7,-129 cp,0.448,8/1pp3k1/1b2bN1p/p3Brp1/Pn3p2/5P1P/1PP1B1KP/2R5 w - - 4 28,0.422,471,4,475,0.0001964,0.0,1,4096
+30,Evxmg,O-O,False,True,e1g1,129 cp,0.552,r1b1k2r/2ppnppp/1p6/p3P3/P7/1N1QPN2/1qP2PPP/R4RK1 b kq - 1 14,0.332,481,3,484,0.0001984,0.0,1,4096
+,,,,,,,,,,,,,,,,
+=== Summary Statistics ===,,,,,,,,,,,,,,,,
+Average Normalized Value,,,,,,0.5045,,,,,,,,,,
+Standard Deviation,,,,,,0.2502,,,,,,,,,,
+Mean Absolute Error (from 0.5),,,,,,0.193,,,,,,,,,,
+Illegal Moves (%),,,,,,46.667%,,,,,,,,,,
+Puzzle Solving Accuracy (%),,,,,,6.667%,,,,,,,,,,
+Mean Value (Legal Moves Only),,,,,,0.5045,,,,,,,,,,
+Average Latency (s),,,,,,0.8189,,,,,,,,,,
+Average Tokens (total),,,,,,685.53,,,,,,,,,,
+Total Cost,,,,,,0.00842,,,,,,,,,,
+Average Cost per Call,,,,,,0.000281,,,,,,,,,,
+Temperature,,,,,,0.0,,,,,,,,,,
+Top_p,,,,,,1,,,,,,,,,,
+Max_tokens,,,,,,4096,,,,,,,,,,

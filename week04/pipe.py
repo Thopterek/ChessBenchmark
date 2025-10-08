@@ -144,7 +144,8 @@ def clean_move_str(move_str: str) -> str:
 
 # ---- MODEL CALL (adds usage include + latency) ----
 def call_model(system_prompt: str, model_name: str, query_prompt: str,
-               temp: float, top_p: float, max_tokens: int):
+               temp: float, top_p: float, max_tokens: int,
+               retries: int = 2):
     prompt = build_system_prompt(max_tokens)
     headers = {
         "Authorization": f"Bearer {OP_TOKEN}",
@@ -160,44 +161,64 @@ def call_model(system_prompt: str, model_name: str, query_prompt: str,
         "temperature": temp,
         "top_p": top_p,
         "include_reasoning": False,
-        "usage": {"include": True}   # <--- enable usage accounting
+        "usage": {"include": True}
     }
 
-    start_t = time.time()
-    try:
-        response = requests.post(OPENROUTER_URL, headers=headers, json=payload, timeout=120)
-    except Exception as e:
-        return {"error": f"Request exception: {e}", "latency": time.time() - start_t}
+    for attempt in range(1, retries + 1):
+        start_t = time.time()
+        try:
+            response = requests.post(
+                OPENROUTER_URL, headers=headers, json=payload, timeout=120
+            )
+        except Exception as e:
+            if attempt == retries:
+                return {"error": f"Request exception: {e}", "latency": time.time() - start_t}
+            time.sleep(2)
+            continue
 
-    latency = time.time() - start_t
+        latency = time.time() - start_t
 
-    if response.status_code != 200:
-        # keep response text for debug
-        return {"error": f"HTTP {response.status_code}: {response.text}", "latency": latency}
+        # Non-200 HTTP code
+        if response.status_code != 200:
+            err_text = response.text[:500].replace("\n", " ")
+            if attempt == retries:
+                return {"error": f"HTTP {response.status_code}: {err_text}", "latency": latency}
+            time.sleep(2)
+            continue
 
-    # data = response.json()
-    try:
-        data = response.json()
-    except json.JSONDecodeError:
+        # Try parsing JSON safely
+        try:
+            data = response.json()
+        except json.JSONDecodeError:
+            err_snippet = response.text[:500].replace("\n", " ")
+            if attempt == retries:
+                return {
+                    "error": f"Invalid JSON from API (attempt {attempt}): {err_snippet}",
+                    "latency": latency
+                }
+            time.sleep(2)
+            continue
+
+        # Extract text and usage safely
+        content = ""
+        try:
+            content = data["choices"][0]["message"]["content"].strip()
+        except Exception:
+            if "choices" in data and data["choices"]:
+                content = str(data["choices"][0])
+            else:
+                content = ""
+
         return {
-        "error": f"Invalid JSON from API: {response.text[:500]}",
-        "latency": latency
-    }
-    # extract move text
-    try:
-        content = data['choices'][0]['message']['content'].strip()
-    except Exception:
-        content = data.get('choices')[0] if 'choices' in data and data['choices'] else ""
+            "text": content,
+            "usage": data.get("usage", {}),
+            "id": data.get("id"),
+            "latency": latency
+        }
 
-    usage = data.get("usage", {})  # usage accounting object (prompt/completion/total tokens, cost)
-    gen_id = data.get("id", None)
+    # Should never reach here
+    return {"error": "Failed after retries", "latency": None}
 
-    return {
-        "text": content,
-        "usage": usage,
-        "id": gen_id,
-        "latency": latency
-    }
 
 # ---- EVALUATION: parse original parse_and_evaluate but extended to compute 'correct' and normalized ----
 def parse_and_evaluate(move_str: str, board: chess.Board, answer_san: str = None):

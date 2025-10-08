@@ -1,0 +1,46 @@
+Call#,PuzzleID,Move,Correct,Legal,UCI,Eval,Normalized,FEN,Latency_s,Prompt_tokens,Completion_tokens,Total_tokens,Cost,Temperature,Top_p,Max_tokens
+1,9la6a,Rxe1,True,True,e8e1,Mate in 0,1.0,r5k1/2p2p2/5nPp/p7/Np6/1B6/PPP3Q1/1K2r3 w - - 0 32,233.069,1445,10836,12281,0.163626,0.0,1,4096
+2,uaey4,Qxg7,True,True,e5g7,Mate in 0,1.0,r4rk1/1p3pQp/4b3/q2P4/2p5/P7/1B3PPP/5RK1 b - - 0 20,288.409,1231,14386,15617,0.21795525,0.0,1,4096
+3,oTHzu,Ne7,True,True,c6e7,Mate in 0,1.0,r4rk1/p3Np1p/1p1p1B2/1P1P1q2/2P5/8/P5PP/R5K1 b - - 1 25,231.178,1324,9591,10915,0.14630475,0.0,1,4096
+4,QEluK,Nf2,True,True,h3f2,Mate in 0,1.0,2r5/6kp/p4pp1/1p1P4/2p2P2/P1Q3P1/5nBP/3R2NK w - - 1 33,179.751,1456,9350,10806,0.14309025,0.0,1,4096
+5,8rc5R,Qf8,True,True,b8f8,Mate in 0,1.0,5Q2/1p2Bk2/p1q1r1r1/3b4/8/6P1/PP3P1P/3R2K1 b - - 14 46,164.182,1730,9373,11103,0.14425725,0.0,1,4096
+6,VKNaw,Qxb3,True,True,f3b3,549 cp,0.72,5rk1/p4ppp/1p2p3/3p4/P3nB2/1Q6/5PPP/3R2K1 b - - 0 23,108.723,1289,7081,8370,0.10855425,0.0,1,4096
+7,4O70b,Qxf7,True,True,f2f7,Mate in 0,1.0,1R6/p4Q1k/2p3pp/3p4/3P4/7P/P7/3qrN1K b - - 0 36,168.8,1525,11704,13229,0.17860725,0.0,1,4096
+8,3pap0,Rxd5,True,True,d8d5,-407 cp,0.337,6k1/5R1p/1p3p2/p2r4/2P5/6P1/Pb3P1P/6K1 w - - 0 24,240.326,1301,16121,17422,0.24419025,0.0,1,4096
+9,2r45i,Kxg4,True,True,f4g4,183 cp,0.573,1r5k/4b2p/2p5/p1p4P/P1Pp2K1/1P1Pp3/1R2P3/7R b - - 0 38,106.408,1556,6601,8157,0.1018335,0.0,1,4096
+10,9HI0Q,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,k3r2r/1p4p1/p4b2/4p3/1q1p4/1P1Q2B1/R5PP/R6K w - - 0 31,75.078,,,,,0.0,1,4096
+11,m3lLD,Qc8,True,True,h3c8,Mate in 0,1.0,2Q1k1r1/pp2rqp1/2p5/7p/3P4/2NP1P2/PP4PP/4R1K1 b - - 1 24,156.739,1309,10279,11588,0.15658425,0.0,1,4096
+12,jBhrJ,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r3r1k1/p3bppp/1p3n2/2nq1NB1/4p3/P6P/1PPNQPP1/1K1R3R b - - 1 18,161.339,,,,,0.0,1,4096
+13,Ya986,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,1k1rr3/p1q5/1p6/1P2BP2/P1b2Q2/2R3P1/7P/3R2K1 b - - 0 38,77.151,,,,,0.0,1,4096
+14,Om0Kx,Bxf8,False,True,d6f8,395 cp,0.658,rn3b1k/p2q2pp/1p6/3Nn1P1/5p1P/P7/1PQ1PP2/R1B2RK1 w - - 0 21,223.028,1245,13105,14350,0.19878225,0.0,1,4096
+15,oyfhP,R8e4,True,True,e8e4,Mate in 0,1.0,2k5/p7/1ppb4/7R/3KrP2/1N2r3/PPP5/7R w - - 2 30,146.21,1409,9081,10490,0.137274,0.0,1,4096
+16,8lqBw,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r2q1rk1/ppp2ppp/2n5/1B2p1N1/1b4b1/2nP4/PPP2PPP/R1B1QRK1 w - - 0 11,183.693,,,,,0.0,1,4096
+17,ubChO,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r2qk2r/pp2bpp1/2np1n1p/2p1P3/2P2B2/2NP1b2/PP2B1PP/R2Q1RK1 w kq - 0 11,184.806,,,,,0.0,1,4096
+18,R9vqz,Ncxe6,True,True,c5e6,468 cp,0.687,r3kb1r/p2nn1pp/1ppqN3/3p2N1/1P1P2P1/2PQB3/P4P2/R4RK1 b kq - 0 19,308.836,1218,15599,16817,0.23610675,0.0,1,4096
+19,JBwqi,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r1b2rk1/ppq2ppp/2nb4/8/2B2pP1/2N2N2/PP2QPP1/R2R2K1 w - - 1 15,144.212,,,,,0.0,1,4096
+20,JnzJN,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,4r3/5pk1/1p1q2pp/pPnN4/2p1PPN1/P4Q1P/6P1/6K1 w - - 1 36,281.426,,,,,0.0,1,4096
+21,pl40T,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,rn1qrn1k/pb2b1pB/1p2R2p/2pp4/3P4/2N2N2/PPQ2PPP/R1B3K1 w - - 1 1,146.557,,,,,0.0,1,4096
+22,R2rPD,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r1b1r1k1/q2n1pbp/2pB2p1/p3P3/Np6/1BP2N1P/PP3nP1/R2QR1K1 w - - 0 17,400.485,,,,,0.0,1,4096
+23,CbXto,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r4r1k/1pp2Ppp/1b1q4/pP5n/P1B1N2P/2P2N2/1BQ2nK1/R3R3 b - - 2 23,144.306,,,,,0.0,1,4096
+24,Ylf61,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,5rk1/2p2p2/pp3P1p/2p1P1p1/q1P5/4QP1P/P2R4/6K1 w - - 1 31,235.059,,,,,0.0,1,4096
+25,CeuuK,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,2r1r1k1/pq3pp1/2N4p/2Qp4/P7/3b3P/3N1PP1/R1R3K1 b - - 0 25,256.067,,,,,0.0,1,4096
+26,On8u6,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,2k5/6p1/3qp2r/1p5p/2pP1b2/2P2P1p/1R2Q3/5RK1 w - - 0 35,586.106,,,,,0.0,1,4096
+27,bH6b8,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r3k2r/1p1bPpbp/p1n3p1/1Bq5/7P/B2Q4/P1P2PP1/1R3KNR b kq - 1 14,278.469,,,,,0.0,1,4096
+28,ZfXoo,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r4r1k/p1p1bp2/1p2p2B/1q2Nb1P/3P4/4QP2/PPP5/1K1R4 w - - 1 23,283.457,,,,,0.0,1,4096
+29,74Qsc,Kf7,False,True,g8f7,-140 cp,0.444,8/1pp2k2/1b2bN1p/p3Brp1/Pn3p2/5P1P/1PP1B1KP/2R5 w - - 4 28,278.069,1107,15032,16139,0.2263125,0.0,1,4096
+30,Evxmg,Invalid JSON from API (attempt 2):      ...,False,False,,,0.0,r1b1k2r/2ppnppp/1p6/p3P3/P7/1N1QPN2/1qP2PPP/R3K2R w KQkq - 0 14,301.414,,,,,0.0,1,4096
+,,,,,,,,,,,,,,,,
+=== Summary Statistics ===,,,,,,,,,,,,,,,,
+Average Normalized Value,,,,,,0.8157,,,,,,,,,,
+Standard Deviation,,,,,,0.2312,,,,,,,,,,
+Mean Absolute Error (from 0.5),,,,,,0.3469,,,,,,,,,,
+Illegal Moves (%),,,,,,53.333%,,,,,,,,,,
+Puzzle Solving Accuracy (%),,,,,,40.0%,,,,,,,,,,
+Mean Value (Legal Moves Only),,,,,,0.8157,,,,,,,,,,
+Average Latency (s),,,,,,219.1117,,,,,,,,,,
+Average Tokens (total),,,,,,12663.14,,,,,,,,,,
+Total Cost,,,,,,2.403478,,,,,,,,,,
+Average Cost per Call,,,,,,0.171677,,,,,,,,,,
+Temperature,,,,,,0.0,,,,,,,,,,
+Top_p,,,,,,1,,,,,,,,,,
+Max_tokens,,,,,,4096,,,,,,,,,,
