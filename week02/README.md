@@ -118,3 +118,4 @@ Base idea relates to possible way of using the expert models as a benchmark for 
 2. Building block of the research (going into the measurable data)
 3. Creating the visualizing of the data
 4. Taking the references
+
